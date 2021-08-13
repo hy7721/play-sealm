@@ -524,17 +524,26 @@ a:link, a:visited {
   box-sizing: border-box;
   background-color: #FFF;
 }
-.mHeader_type1 .inner_p {
+.m_header_type1 .inner_p {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 70px;
 }
-.mHeader_type2 .inner_p {
+.m_header_type2 .inner_p {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 70px;
+}
+
+.m_header_type1 .txt_title,
+.m_header_type2 .txt_title {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: -0.8px;
+  color: #333;
 }
 
 /* main */
@@ -554,7 +563,8 @@ a:link, a:visited {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 130px;
+  height: 80px;
+
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -568,22 +578,27 @@ a:link, a:visited {
   left: 0;
   right: 0;
   width: 100%;
-  height: 130px;
+  height: 80px;
 }
 
 .inner_srch_type1 {
   overflow: hidden;
   position: relative;
-  height: 62px;
-  padding: 34px 30px 33px 30px;
+  height: 80px;
+  padding: 25px 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .input_srch_type1 {
   overflow: visible;
   width: 100%;
-  height: 62px;
-  padding: 0 0 0 72px;
+  padding: 0 0 0 60px;
   border: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 17px;
   font-weight: 700;
   color: #333;
@@ -632,11 +647,10 @@ a:link, a:visited {
 
 .btn_srch_type1 {
   position: absolute;
-  top: 34px;
-  left: 30px;
+  top: 30px;
+  left: 35px;
   width: 19px;
   height: 19px;
-  margin: 22px 24px 22px 30px;
 }
 
 .btn_srch_type2 {
@@ -662,53 +676,69 @@ a:link, a:visited {
 
 
 
-
-/* 1depth */
-
-.list_help,
-.list_qna {
-  margin: 50px 0 78px;
-}
-
-.list_help {
+.list_customer {
   position: relative;
+  margin: 50px 0 78px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.list_help li {
+.list_customer li {
   padding: 22px 0;
 }
-.list_help li + li {
+.list_customer li + li {
   border-top: 2px solid #EBEBEB;
 }
-.list_help li:last-child {
+.list_customer li:last-child {
   border-bottom: 2px solid #EBEBEB;
 }
 
-.link_help {
+.link_customer {
   width: 100%;
 }
 
-.list_help .ico_landing {
+.list_customer .txt_subtitle {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: -0.8px;
+  color: #333;
+}
+
+.list_customer .ico_landing {
   position: absolute;
   right: 0;
   margin-top: 8px;
 } 
 
-.list_help .ico_arr_r {
+.list_customer .ico_arr_r {
   position: absolute;
   right: 0;
   margin-top: 9px;
 }
 
-.list_help .ico_arr_d,
+.list_customer .ico_arr_d,
 .list_qna .ico_arr_d {
   position: absolute;
   right: 0;
   margin-top: 12px;
 }
+
+
+
+
+
+
+
+
+
+.list_qna {
+  margin: 50px 0 78px;
+}
+
+
+
 
 .wrap_note {
   position: relative;
