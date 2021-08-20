@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="autocomplete" content="off" />
   <meta name="apple-mobile-web-app-capable" content="no"/>
   <meta name="apple-touch-fullscreen" content="YES"/>
-
-  <meta property="og:title" content="씰M 모바일 고객센터"/>
-  <meta property="og:description" content=""/>
 
   <title>01_0 Main</title>
 
@@ -22,58 +19,69 @@
 </head>
 
 <body>
-
   <noscript>
     <strong>모바일 고객센터</strong>
     <p>페이지의 스크립트 유형을 지원하지 않거나, 브라우저가 스크립트를 비활성화하였습니다.</p>
   </noscript>
 
+  <!-- mWrap -->
   <div id="mWrap">
     <h1><span class="sr_only">모바일 고객센터</span></h1>
+    
+    <!-- HEADER -->
+    <!-- m.header_type1 > 이전, 닫기 버튼 없는 상태(메인페이지에만 해당) -->
     <header id="mHeader" class="m_header_type1">
       <div class="inner_p">
-        <h2><span class="txt_title">고객센터</span></h2>
+        <h2><span class="tit_maintit">고객센터</span></h2>
       </div>
     </header>
+    <!-- // HEADER -->
 
+    <!-- MAIN -->
     <main id="mMain" class="m_main">
       <h2><span class="sr_only">고객센터 메인페이지</span></h2>
       <div class="inner_p">
+
         <ul class="list_customer">
           <li>
             <a href="02_1_0_faq.html" class="link_customer">
-              <span class="txt_subtitle">FAQ</span>
+              <span class="tit_subtit">FAQ</span>
               <span class="ico_arr_r ico_comm"></span>
             </a>
           </li>
           <li>
-            <a href="03_1_1_ask.html" class="link_customer">
-              <span class="txt_subtitle">문의내역확인</span>
+            <a href="03_2_1_ask_result.html" class="link_customer">
+              <span class="tit_subtit">문의내역확인</span>
               <span class="ico_arr_r ico_comm"></span>
             </a>
           </li>
           <li>
             <a href="04_1_1_receipt.html" class="link_customer">
-              <span class="txt_subtitle">현금영수증조회</span>
+              <span class="tit_subtit">현금영수증조회</span>
               <span class="ico_arr_r ico_comm"></span>
             </a>
           </li>
           <li>
             <a href="05_1_0_policy.html" class="link_customer">
-              <span class="txt_subtitle">정책</span>
+              <span class="tit_subtit">정책</span>
               <span class="ico_arr_r ico_comm"></span>
             </a>
           </li>
           <li>
             <a href="#none" class="link_customer">
-              <span class="txt_subtitle">공지</span>
+              <span class="tit_subtit">공지</span>
               <span class="ico_landing ico_comm"></span>
             </a>
           </li>
         </ul>
+
       </div>
     </main>
+    <!-- // MAIN -->
 
+    <a href="#none" id="btnTop"><img src="./images/img_top.png" alt="페이지 맨 위로 이동"></a>
+
+    <!-- FOOTER -->
     <footer id="mFooter" class="m_footer">
       <h2><span class="sr_only">푸터 영역</span></h2>
       <div class="inner_footer">
@@ -90,6 +98,8 @@
         <p class="txt_copyright">&copy; PLAYWITH Inc. All Rights Reserved</p>
       </div>
     </footer>
-  </div>
+    <!-- // FOOTER -->
 
+  </div>
+  <!-- // mWrap -->
 </body></html>

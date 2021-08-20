@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="autocomplete" content="off" />
   <meta name="apple-mobile-web-app-capable" content="no"/>
   <meta name="apple-touch-fullscreen" content="YES"/>
-
-  <meta property="og:title" content="씰M 모바일 고객센터"/>
-  <meta property="og:description" content=""/>
 
   <title>04_2 현금영수증 조회 결과 없음</title>
 
@@ -22,51 +19,57 @@
 </head>
 
 <body>
-
   <noscript>
     <strong>모바일 고객센터</strong>
     <p>페이지의 스크립트 유형을 지원하지 않거나, 브라우저가 스크립트를 비활성화하였습니다.</p>
   </noscript>
 
+  <!-- mWrap -->
   <div id="mWrap">
     <h1><span class="sr_only">모바일 고객센터</span></h1>
+
+    <!-- HEADER -->
+    <!-- m.header_type2 > 이전, 닫기 버튼 있는 상태 -->
     <header id="mHeader" class="m_header_type2">
       <div class="inner_p">
         <a href="#none" class="link_back">
           <span class="ico_arr_l ico_comm"></span>
           <span class="sr_only">이전 페이지</span>
         </a>
-        <h2><span class="txt_title">현금영수증 조회</span></h2>
+        <h2><span class="tit_maintit">현금영수증 조회</span></h2>
         <a href="#none" class="link_close">
           <span class="ico_x ico_comm"></span>
           <span class="sr_only">닫기</span>
         </a>
       </div>
     </header>
+    <!-- // HEADER -->
 
+    <!-- MAIN -->
     <main id="mMain" class="m_main">
       <h2><span class="sr_only">고객센터 메인페이지</span></h2>
       <div class="inner_p">
 
-        <nav class="m_srch_type2">
-          <form class="form_srch_type2" action="#none" role="search">
+        <div class="m_input_type2">
+          <form class="form_input_type2" action="#none" role="search">
             <button type="button" class="btn_srch_type2">
               <span class="ico_comm ico_srch"></span>
               <span class="sr_only">찾기 버튼</span>
             </button>
             <input type="search" class="input_srch_type2" placeholder="구글 영수증 번호를 입력하세요.">
           </form>
-        </nav>
+        </div>
+
         <a href="#none" class="btn_receipt" onclick="layerPopupOpen('alert_confirm'); return false;">
           <img src="./images/img_receipt.png" alt="구글 영수증 번호란?">
         </a>
 
         <div class="wrap_note">
-          <strong><span class="txt_subtitle">유의사항</span></strong>
+          <strong class="txt_common">유의사항</strong>
           <ul class="list_note">
             <li>
               <p class="txt_note">
-                플레이위드 게임즈 모바일 게임에서 Google Play Balance (기프트 카드 및 코드)로 결제하신 건은 현금영수증 식별정보 수집이 불가능함에 따라, 결제일로부터 3일 이내에 현금영수증을 무기명으로 발급하고 있습니다.
+                플레이위드 게임즈 모바일 게임에서 Google Play Balance &lpar;기프트 카드 및 코드&rpar;로 결제하신 건은 현금영수증 식별정보 수집이 불가능함에 따라, 결제일로부터 3일 이내에 현금영수증을 무기명으로 발급하고 있습니다.
                 <br>
                 <br>
                 단, 결제취소 또는 환불 시에는 발급이 취소됩니다.
@@ -84,22 +87,30 @@
             </li>
             <li>
               <p class="txt_note">
-                Google Play Balance(기프트카드 및 코드)로 결제하신 건은 현금영수증이 본인의 명의로 자동 발급되지 않으므로 홈택스(https://www.hometax.go.kr)에서 직접 등록하셔야 합니다.
+                Google Play Balance&lpar;기프트카드 및 코드&rpar;로 결제하신 건은 현금영수증이 본인의 명의로 자동 발급되지 않으므로 홈택스&lpar;https://www.hometax.go.kr&rpar;에서 직접 등록하셔야 합니다.
               </p>
             </li>
           </ul>
-        </div>
+        </div>  
+
+        <div class="wrap_btn">
+          <a href="#none" class="btn_confirm btn_full b_blue">조회</a>
+        </div>  
+
       </div>
+    </main>
+    <!-- // MAIN -->
 
     <!-- 팝업 영역 -->
-    <div class="wrap_popup alert_confirm" style="display: block;">
+    <div class="wrap_popup alert_confirm">
       <div class="inner_popup">
-        <strong class="txt_title">구글 영수증 (거래 ID) 번호 안내</strong>
+
+        <strong class="tit_maintit">구글 영수증 &lpar;거래 ID&rpar; 번호 안내</strong>
         <div class="cont_popup">
-          <p class="txt_item">
+          <p class="txt_article">
             구글 플레이 스토어에서 결제한 내역은
             <br>
-            구글 결제 센터를 통해 직접 확인하실 수 있습니다.
+            <a href="https://pay.google.com" class="txt_b" target="_blank">구글 결제 센터</a>를 통해 직접 확인하실 수 있습니다.
             <br>
             <br>
             1&rpar; <span class="txt_b">구글 결제센터</span>에 진입하여 결제를 진행한 구글 계정으로 로그인합니다.
@@ -119,25 +130,20 @@
             <br>
             - 구글 플레이 스토어로 결제 시 각각의 결제건마다 부여되는 번호로 카드, 통신사 번호와는 다릅니다.
           </p>
-
         </div>
-        <button type="button" onclick="layerPopupClose(); return false;" class="btn_confirm btn_full b_blue">확인</button>
+
+        <div class="wrap_btn">
+          <button type="button" onclick="layerPopupClose(); return false;" class="btn_confirm btn_full b_blue">확인</button>
+        </div>
+
       </div>
+
       <div class="wrap_dimmed"></div>
     </div>
     <!-- // 팝업 영역 -->
 
+    <a href="#none" id="btnTop"><img src="./images/img_top.png" alt="페이지 맨 위로 이동"></a>
 
-
-
-
-
-
-
-
-
-
-    </main>
   </div>
-
+  <!-- // mWrap -->
 </body></html>
