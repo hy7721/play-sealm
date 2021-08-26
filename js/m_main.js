@@ -32,35 +32,58 @@ $(document).ready(function() {
     }
   });
 
-  // btnTop
-  // IE not supports, IE 지원 X
+  // btnTop(IE not supports. Supports all major browsers)
   window.scrollY;
   document.scrollingElement.scrollTop;
-
-  // Supports all major browsers
   document.documentElement.scrollTop;
   document.querySelector('html').scrollTop;
 
-  // 스크롤이 끝으로 이동 시 이벤트 발생
   window.addEventListener('scroll', () => {
     if (window.pageYOffset <= 0) {
-      jQuery('#btnTop').removeClass('showTopbutton');
+      jQuery('#btnTop, #btnBottom').removeClass('showButton');
     } else {
-      jQuery('#btnTop').addClass('showTopbutton');
+      jQuery('#btnTop, #btnBottom').addClass('showButton');
     }
   });
   jQuery(window).on("touchmove", function (e) {
     if (window.pageYOffset <= 0) {
-      jQuery('#btnTop').removeClass('showTopbutton');
+      jQuery('#btnTop, #btnBottom').removeClass('showButton');
     } else {
-      jQuery('#btnTop').addClass('showTopbutton');
+      jQuery('#btnTop, #btnBottom').addClass('showButton');
     }
   });
   jQuery('#btnTop').on('click touch', function() {
     jQuery('html,body').animate({ scrollTop: 0 }, 300);
-    jQuery('#btnTop').removeClass('showTopbutton');
+    jQuery('#btnTop').removeClass('showButton');
   });
+  jQuery('#btnBottom').on('click touch', function() {
+    jQuery('html,body').animate({ scrollTop: $(document).height() }, 500);
+    jQuery('#btnBottom').removeClass('showButton');
+  });
+
+  // 모바일 100vh 하단 가려지는 현상 해결
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+  // document.querySelector('.wrap_result', '.wrap_receipt', '.wrap_error').style.height = window.innerHeight + "px";
 });
+
+// loading
+$(document).ready(function(){
+	$('#preloader').hide(); //첫 시작시 로딩바를 숨겨준다.
+})
+.ajaxStart(function(){
+  $('#preloader').show(); //ajax실행시 로딩바를 보여준다.
+})
+.ajaxStop(function(){
+  $('#preloader').hide(); //ajax종료시 로딩바를 숨겨준다.
+});
+// $(window).on('load', function() {
+//   if ($('#preloader').length) {
+//     $('#preloader').delay(100).fadeOut('slow', function() {
+//       $(this).remove();
+//     });
+//   }
+// });
 
 // layer popup
 function layerPopupOpen($t){
