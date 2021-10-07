@@ -7,6 +7,7 @@
   <meta name="autocomplete" content="off" />
   <meta name="apple-mobile-web-app-capable" content="no"/>
   <meta name="apple-touch-fullscreen" content="YES"/>
+  <meta name="format-detection" content="telephone=no"><!-- safari  -->
 
   <title>03_2 문의내역확인</title>
 
@@ -37,10 +38,12 @@
           <span class="sr_only">이전 페이지</span>
         </a>
         <h2><span class="tit_maintit">문의내역 확인</span></h2>
-        <a href="#none" class="link_close">
+        <!-- 2021. 10. 06. 닫기 버튼 삭제 -->
+        <!-- <a href="#none" class="link_close">
           <span class="ico_x ico_comm"></span>
           <span class="sr_only">닫기</span>
-        </a>
+        </a> -->
+        <!-- // 2021. 10. 06. 닫기 버튼 삭제 -->
       </div>
     </header>
     <!-- // HEADER -->
@@ -67,6 +70,9 @@
             만약 질문&sol;답변을 분실하셨다면, 아래와 같이 변경이 가능합니다.
           </p>
           <div class="wrap_file">
+            <span class="txt_file">첨부파일명</span>
+            <span class="txt_file">첨부파일명</span>
+            <span class="txt_file">첨부파일명</span>
             <span class="txt_file">첨부파일명</span>
             <span class="txt_file">첨부파일명</span>
           </div>
@@ -160,7 +166,6 @@
     <!-- // MAIN -->
 
     <a href="#none" id="btnTop"><img src="./images/img_top.png" class="ico_top" alt="페이지 맨 위로 이동"></a>
-    <a href="#none" id="btnBottom"><img src="./images/img_bottom.png" class="ico_bottom" alt="페이지 맨 아래로 이동"></a>
 
   </div>
   <!-- // mWrap -->

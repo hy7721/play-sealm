@@ -7,6 +7,7 @@
   <meta name="autocomplete" content="off" />
   <meta name="apple-mobile-web-app-capable" content="no"/>
   <meta name="apple-touch-fullscreen" content="YES"/>
+  <meta name="format-detection" content="telephone=no"><!-- safari  -->
 
   <title>03_1 문의하기</title>
 
@@ -37,10 +38,12 @@
           <span class="sr_only">이전 페이지</span>
         </a>
         <h2><span class="tit_maintit">문의하기</span></h2>
-        <a href="#none" class="link_close">
+        <!-- 2021. 10. 06. 닫기 버튼 삭제 -->
+        <!-- <a href="#none" class="link_close">
           <span class="ico_x ico_comm"></span>
           <span class="sr_only">닫기</span>
-        </a>
+        </a> -->
+        <!-- // 2021. 10. 06. 닫기 버튼 삭제 -->
       </div>
     </header>
     <!-- // HEADER -->
@@ -78,13 +81,27 @@
           </div>
           <p class="txt_count">&lpar;1&sol;500&rpar;</p>
           <div class="wrap_upload">
-            <!-- 파일 등록 전 -->
-            <p class="txt_common txt_g5"><span>등록한 파일명.파일명</span></p>
-            <!-- 파일 등록 후 -->
-            <!-- <p class="txt_common txt_g5 upload"><span>등록.jpg</span></p> -->
+            <ul class="list_upload">
+              <li>
+                <!-- 파일 등록 전 -->
+                <p class="txt_common txt_g5"><span>등록한 파일명.파일명</span></p>
+              </li>
+              <li>
+                <!-- 파일 등록 후 -->
+                <p class="txt_common txt_g5 upload"><span>등록.jpg</span></p>
+                <button type="button" class="btn_delete" onclick="">
+                  <span class="sr_only">삭제</span>
+                </button>
+              </li>
+              <li>
+                <!-- 파일 등록 후 -->
+                <p class="txt_common txt_g5 upload"><span>등록.jpg</span></p>
+                <button type="button" class="btn_delete" onclick="">
+                  <span class="sr_only">삭제</span>
+                </button>
+              </li>
+            </ul>
             <div class="wrap_file">
-              <a href="#none" class="btn_upload"><span class="sr_only">파일 업로드 버튼</span></a>
-              <a href="#none" class="btn_upload"><span class="sr_only">파일 업로드 버튼</span></a>
               <a href="#none" class="btn_upload"><span class="sr_only">파일 업로드 버튼</span></a>
             </div>
             <p class="txt_common txt_g5">5M 미만의 JPEG&sol;PNG 파일만 등록할 수 있습니다.</p>
