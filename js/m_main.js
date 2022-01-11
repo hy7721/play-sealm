@@ -13,25 +13,6 @@ $(document).ready(function() {
     $(this).next(".list_article").siblings(".list_a").slideUp(300);
   });
 
-  // select option style
-  $('.select_option1').change(function() {
-    var current = $('.select_option1').val();
-    if (current != 'null') {
-      $('.select_option1').css('color','#333');
-    } else {
-      $('.select_option1').css('color','#CCC');
-    }
-  });
-
-  $('.select_option2').change(function() {
-    var current = $('.select_option2').val();
-    if (current != 'null') {
-      $('.select_option2').css('color','#333');
-    } else {
-      $('.select_option2').css('color','#CCC');
-    }
-  });
-
   // btnTop(IE not supports. Supports all major browsers)
   window.scrollY;
   document.scrollingElement.scrollTop;
@@ -68,22 +49,22 @@ $(document).ready(function() {
 });
 
 // loading
-$(document).ready(function(){
-	$('#preloader').hide(); //첫 시작시 로딩바를 숨겨준다.
-})
-.ajaxStart(function(){
-  $('#preloader').show(); //ajax실행시 로딩바를 보여준다.
-})
-.ajaxStop(function(){
-  $('#preloader').hide(); //ajax종료시 로딩바를 숨겨준다.
-});
-// $(window).on('load', function() {
-//   if ($('#preloader').length) {
-//     $('#preloader').delay(100).fadeOut('slow', function() {
-//       $(this).remove();
-//     });
-//   }
+// $(document).ready(function(){
+// 	$('#preloader').hide(); //첫 시작시 로딩바를 숨겨준다.
+// })
+// .ajaxStart(function(){
+//   $('#preloader').show(); //ajax실행시 로딩바를 보여준다.
+// })
+// .ajaxStop(function(){
+//   $('#preloader').hide(); //ajax종료시 로딩바를 숨겨준다.
 // });
+$(window).on('load', function() {
+  if ($('#preloader').length) {
+    $('#preloader').delay(2000).fadeOut('slow', function() {
+      $(this).remove();
+    });
+  }
+});
 
 // layer popup
 function layerPopupOpen($t){

@@ -18,7 +18,6 @@
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/m_main.js"></script>
 </head>
-
 <body>
   <noscript>
     <strong>모바일 고객센터</strong>
@@ -33,7 +32,7 @@
     <!-- m.header_type1 > 이전, 닫기 버튼 없는 상태(메인페이지에만 해당) -->
     <header id="mHeader" class="m_header_type1">
       <div class="inner_p">
-        <h2><span class="tit_maintit">고객센터</span></h2>
+        <h2><a href="#none"><span class="tit_maintit">고객센터</span></a></h2>
       </div>
     </header>
     <!-- // HEADER -->
@@ -42,38 +41,72 @@
     <main id="mMain" class="m_main">
       <h2><span class="sr_only">고객센터 메인페이지</span></h2>
       <div class="inner_p">
-        <ul class="list_customer">
+        <!-- 2021.12.28 클래스명 수정(list_customer > list_main, link_customer > link_main) -->
+        <ul class="list_main">
           <li>
-            <a href="02_1_0_faq.html" class="link_customer">
+            <a href="02_1_0_faq.html" class="link_main">
               <span class="tit_subtit">FAQ</span>
               <span class="ico_arr_r ico_comm"></span>
             </a>
           </li>
           <li>
-            <a href="03_2_1_ask_result.html" class="link_customer">
+            <a href="03_2_1_ask_result.html" class="link_main">
               <span class="tit_subtit">문의내역확인</span>
               <span class="ico_arr_r ico_comm"></span>
             </a>
           </li>
           <li>
-            <a href="04_1_1_receipt.html" class="link_customer">
-              <span class="tit_subtit">현금영수증조회</span>
-              <span class="ico_arr_r ico_comm"></span>
-            </a>
-          </li>
-          <li>
-            <a href="05_1_0_policy.html" class="link_customer">
+            <a href="05_1_0_policy.html" class="link_main">
               <span class="tit_subtit">정책</span>
               <span class="ico_arr_r ico_comm"></span>
             </a>
           </li>
           <li>
-            <a href="#none" class="link_customer">
+            <a href="#none" class="link_main">
               <span class="tit_subtit">공지</span>
               <span class="ico_landing ico_comm"></span>
             </a>
           </li>
+          <!-- 2021.12.28 추가 -->
+          <li>
+            <a href="#none" class="link_main">
+              <span class="tit_subtit">쿠폰</span>
+              <span class="ico_landing ico_comm"></span>
+            </a>
+          </li>
+          <!-- // 2021.12.28 추가 -->
+          <li>
+            <a href="#none" class="link_main">
+              <span class="tit_subtit">test</span>
+              <span class="ico_landing ico_comm"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_main">
+              <span class="tit_subtit">test</span>
+              <span class="ico_landing ico_comm"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_main">
+              <span class="tit_subtit">test</span>
+              <span class="ico_landing ico_comm"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_main">
+              <span class="tit_subtit">test</span>
+              <span class="ico_landing ico_comm"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="link_main">
+              <span class="tit_subtit">test</span>
+              <span class="ico_landing ico_comm"></span>
+            </a>
+          </li>
         </ul>
+        <!-- // 2021.12.28 클래스명 수정(list_customer > list_main, link_customer > link_main) -->
       </div>
     </main>
     <!-- // MAIN -->
@@ -84,7 +117,8 @@
     <footer id="mFooter" class="m_footer">
       <h2><span class="sr_only">푸터 영역</span></h2>
       <div class="inner_footer">
-        <div class="list_footer">
+        <!-- 2021.12.16 Footer 영역 텍스트 삭제 시 이 부분만 삭제해주시면 됩니다. -->
+        <!-- <div class="list_footer">
           <span class="txt_footer">㈜플레이위드게임즈</span>
           <span class="txt_footer">대표이사 김학준</span>
           <span class="txt_footer">사업자등록번호 306-81-06027</span>
@@ -93,12 +127,12 @@
           <a href="tel:1588-7499" class="txt_footer">TEL : 1588-7499</a>
           <span class="txt_footer">FAX : 02-6008-5657</span>
           <span class="txt_footer">개인정보 보호책임자 : 이재용 privacy@playwith.co.kr</span>
-        </div>
+        </div> -->
+        <!-- // 2021.12.16 Footer 영역 텍스트 삭제 시 이 부분만 삭제해주시면 됩니다. -->
         <p class="txt_copyright">&copy; PLAYWITH Inc. All Rights Reserved</p>
       </div>
     </footer>
     <!-- // FOOTER -->
-
   </div>
   <!-- // mWrap -->
 </body></html>
