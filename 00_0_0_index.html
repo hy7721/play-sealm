@@ -10,6 +10,9 @@
 
   <title>00_0 Index</title>
 
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
   <!-- css -->
   <link rel="stylesheet" href="./css/m_style.css">
 
@@ -18,96 +21,231 @@
   <script src="./js/m_main.js"></script>
 
   <style>
-    #index { position: relative; width: 100%; margin: 0 auto; padding: 20px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 16px; letter-spacing: -0.3px; }
-    #index > strong { display: inline-block; width: 100%; font-size: 1.2em; font-weight: 700; text-align: center; color: #5498DA;}
+    #index { 
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    .inner_index {
+      width: 1600px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    strong {
+      display: inline-block;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: underline;
+      color: #5498DA;
+    }
 
-    .index_page { position: relative; width: 100%; height: 100%; margin: 20px 0; border: 1px solid #CCC; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 0.8em; }
-    .index_page thead { border: 1px solid #CCC; text-align: center; font-size: 1em; font-weight: 700; color: #FFF; background-color: #5498DA; }
-    .index_page tr:nth-child(2n) { background-color: #F1F1F1; }
-    .index_page td { padding: 10px; }
-    .index_page td + td { border-left: 1px solid #CCC; }
-    .index_page a { font-size: 0.9em; color: #333; }
-    .index_page a:hover, .index_page a:visited, .index_page a:focus { color: #333; }
+    .index_page {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 20px 0 100px 0;
+      border: 1px solid #CCC;
+      font-size: 12px;
+    }
+
+    .index_page thead {
+      border: 1px solid #CCC;
+      font-weight: 700;
+      text-align: center;
+      color: #FFF;
+      background-color: #5498DA;
+    }
+
+    .index_page tr:nth-child(2n) {
+      background-color: #F1F1F1;
+    }
+
+    .index_page td {
+      padding: 10px;
+    }
+    .index_page td + td {
+      border-left: 1px solid #CCC;
+    }
+    
+    .index_page a {
+      color: #333;
+    }
+    .index_page a:hover,
+    .index_page a:visited,
+    .index_page a:focus {
+      color: #333;
+    }
+
+    .wrap_layouts {
+      float: left;
+      width: 1600px;
+      height: 600px;
+      margin: 0 auto 20px auto;
+    }
+    .cont_layout {
+      float: left;
+      width: 25%;
+      margin: 20px 0 100px 0;
+      padding: 10px;
+    }
+    /* .cont_layout + .cont_layout {
+      margin-left: 30px;
+    } */
+
+    .cont_layout .subtit {
+      margin: 10px 0;
+      font-size: 12px;
+      text-align: center;
+    }
   </style>
 </head>
 
 <body>
-  <!-- mWrap -->
+  <!-- #index -->
   <div id="index">
-    <strong>SEALM CS Index Page</strong>
-
-    <table class="index_page">
-      <thead>
-        <tr>
-          <td style="width: 40%">Title</td>
-          <td style="width: 60%">Page</td>
-        </tr>  
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>0_0 로딩 페이지(현재 비활성화 상태)</td>
-          <td><a href="00_0_0_loading.html">00_0_0_loading.html</a></td>
-        </tr>
-        <tr>
-          <td>1_1 메인 페이지</td>
-          <td><a href="01_1_0_main.html">01_1_0_main.html</a></td>
-        </tr>
-        <tr>
-          <td>2_1 FAQ 페이지</td>
-          <td><a href="02_1_0_faq.html">02_1_0_faq.html</a></td>
-        </tr>
-        <tr>
-          <td>2_2 FAQ 검색결과 상세화면</td>
-          <td><a href="02_2_1_faq_result.html">02_2_1_faq_result.html</a></td>
-        </tr>
-        <tr>
-          <td>2_2 FAQ 검색결과 없음</td>
-          <td><a href="02_2_2_faq_result.html">02_2_2_faq_result.html</a></td>
-        </tr>
-        <tr>
-          <td>3_1 문의하기</td>
-          <td><a href="03_1_1_ask.html">03_1_1_ask.html</a></td>
-        </tr>
-        <tr>
-          <td>3_1 문의접수 완료</td>
-          <td><a href="03_1_2_ask.html">3_1_2_ask.html</a></td>
-        </tr>
-        <tr>
-          <td>3_2 문의내역 확인</td>
-          <td><a href="03_2_1_ask_result.html">03_2_1_ask_result.html</a></td>
-        </tr>
-        <tr>
-          <td>3_2 문의내역 없음</td>
-          <td><a href="03_2_2_ask_result.html">03_2_2_ask_result.html</a></td>
-        </tr>
-        <tr>
-          <td>4_1 현금영수증 조회</td>
-          <td><a href="04_1_1_receipt.html">04_1_1_receipt.html</a></td>
-        </tr>
-        <tr>
-          <td>4_2 현금영수증 조회 결과</td>
-          <td><a href="04_2_1_receipt.html">04_2_1_receipt.html</a></td>
-        </tr>
-        <tr>
-          <td>4_2 현금영수증 조회 결과 없음</td>
-          <td><a href="04_2_2_receipt.html">04_2_2_receipt.html</a></td>
-        </tr>
-        <tr>
-          <td>5_1 정책 페이지</td>
-          <td><a href="05_1_0_policy.html">05_1_0_policy.html</a></td>
-        </tr>
-        <tr>
-          <td>5_2 정책 내용</td>
-          <td><a href="05_2_1_policy_detail.html">05_2_1_policy_detail.html</a></td>
-        </tr>
-        <tr>
-          <td>6_1 오류 페이지</td>
-          <td><a href="06_1_0_error.html">06_1_0_error.html</a></td>
-        </tr>
-      </tbody>
-    </table>
-
+    <div class="inner_index">
+      <strong>SEALM Index Page</strong>
+      <table class="index_page">
+        <thead>
+          <tr><td style="width: 40%">Title</td><td style="width: 60%">Page</td></tr>
+        </thead>
+        <tbody>
+          <tr><td>0_0 로딩 페이지</td><td><a href="00_0_0_loading.html">00_0_0_loading.html</a></td></tr>
+          <tr><td>1_1 메인 페이지</td><td><a href="01_1_0_main.html">01_1_0_main.html</a></td></tr>
+          <tr><td>2_1 FAQ 페이지</td><td><a href="02_1_0_faq.html">02_1_0_faq.html</a></td></tr>
+          <tr><td>2_2 FAQ 검색결과 상세화면</td><td><a href="02_2_1_faq_result.html">02_2_1_faq_result.html</a></td></tr>
+          <tr><td>2_2 FAQ 검색결과 없음</td><td><a href="02_2_2_faq_result.html">02_2_2_faq_result.html</a></td></tr>
+          <tr><td>3_1 문의하기</td><td><a href="03_1_1_ask.html">03_1_1_ask.html</a></td></tr>
+          <tr><td>3_1 문의접수 완료</td><td><a href="03_1_2_ask.html">3_1_2_ask.html</a></td></tr>
+          <tr><td>3_2 문의내역 확인</td><td><a href="03_2_1_ask_result.html">03_2_1_ask_result.html</a></td></tr>
+          <tr><td>3_2 문의내역 없음</td><td><a href="03_2_2_ask_result.html">03_2_2_ask_result.html</a></td></tr>
+          <tr><td>4_1 현금영수증 조회</td><td><a href="04_1_1_receipt.html">04_1_1_receipt.html</a></td></tr>
+          <tr><td>4_2 현금영수증 조회 결과</td><td><a href="04_2_1_receipt.html">04_2_1_receipt.html</a></td></tr>
+          <tr><td>4_2 현금영수증 조회 결과 없음</td><td><a href="04_2_2_receipt.html">04_2_2_receipt.html</a></td></tr>
+          <tr><td>5_1 정책 페이지</td><td><a href="05_1_0_policy.html">05_1_0_policy.html</a></td></tr>
+          <tr><td>5_2 정책 내용</td><td><a href="05_2_1_policy_detail.html">05_2_1_policy_detail.html</a></td></tr>
+          <tr><td>6_1 오류 페이지</td><td><a href="06_1_0_error.html">06_1_0_error.html</a></td></tr>
+        </tbody>
+      </table>
+      <strong>SEALM texts</strong>
+      <table class="index_page">
+        <thead>
+          <tr><td style="width: 20%">class name</td><td style="width: 20%">font-size</td><td style="width: 20%">font-weight</td><td style="width: 20%">letter-spacing</td><td style="width: 20%">etc</td></tr>
+        </thead>
+        <tbody style="text-align: center;">
+          <tr><td class="tit_maintit">tit_maintit</td><td style="font-size: 20px">20px</td><td>900</td><td>-1px</td><td style="color: #333">color: #333</td></tr>
+          <tr><td class="tit_subtit">tit_subtit</td><td style="font-size: 17px;">17px</td><td>700</td><td></td><td></td></tr>
+          <tr><td class="tit_result">tit_result</td><td style="font-size: 16px;">16px</td><td>700</td><td>-0.8px</td><td></td></tr>
+          <tr><td class="txt_common">txt_common</td><td style="font-size: 15px;">15px</td><td></td><td>-0.8px</td><td style="color: #333">color: #333</td></tr>
+          <tr><td class="txt_article">txt_artilce</td><td style="font-size: 14px;">14px</td><td>500</td><td>-0.8px</td><td></td></tr>
+          <tr><td class="txt_count" style="text-align: center;">txt_count</td><td style="font-size: 12px;">12px</td><td>400</td><td></td><td style="color: #CCC">color: #CCC</td></tr>
+          <tr><td class="txt_status">txt_status</td><td style="font-size: 13px;">13px</td><td>500</td><td></td><td style="color: #85878A">color: #85878A</td></tr>
+          <tr><td class="txt_result">txt_result</td><td style="font-size: 14px;">14px</td><td>500</td><td>-1px</td><td color: #494949>line-height: 2, color: #494949 </td></tr>
+          <tr><td class="txt_q">txt_q</td><td style="font-size: 15px;">15px</td><td>700</td><td></td><td style="color: #333;">color: #333</td></tr>
+          <tr><td class="txt_note">txt_note</td><td>12px</td><td>500</td><td>-0.3px</td><td style="color: #56585B">line-height: 1.5; color: #56585B</td></tr>
+          <tr><td class="policy_detail">policy_detail</td><td>15px</td><td></td><td>-0.2px</td><td style="color: #333">line-height: 1.7; color: #333</td></tr>
+          <tr><td>input_txt_type1</td><td style="font-size: 17px;">17px</td><td>500</td><td></td><td style="color: #333">color: #333</td></tr>
+          <tr><td>input_txt_type1:placeholder</td><td style="font-size: 17px;">17px</td><td>500</td><td>-1px</td><td style="color: #CCC">color: #CCC</td></tr>
+          <tr><td>input_txt_type2</td><td style="font-size: 14px;">14px</td><td>500</td><td></td><td style="color: #333">line-height: 1.5, color: #333</td></tr>
+          <tr><td>input_txt_type2:placeholder</td><td style="font-size: 14px;">14px</td><td>500</td><td></td><td style="color: #CCC">color: #CCC</td></tr>
+          <tr><td>input_srch_type1</td><td style="font-size: 14px;">14px</td><td>700</td><td></td><td style="color: #333">color: #333</td></tr>
+          <tr><td>input_srch_type1:placeholder</td><td style="font-size: 14px;">14px</td><td>700</td><td></td><td style="color: #CCC">color: #CCC</td></tr>
+          <tr><td>input_srch_type2</td><td style="font-size: 14px;">14px</td><td>700</td><td></td><td style="color: #333">color: #333</td></tr>
+          <tr><td>select_option</td><td style="font-size: 17px;">17px</td><td>500</td><td></td><td style="color: #333">color: #333</td></tr>
+          <tr><td>btn_full</td><td style="font-size: 16px;">16px</td><td>500</td><td>-0.8px</td><td>color: #FFF</td></tr>
+          <tr><td>btn_inline</td><td style="font-size: 13px;">13px</td><td>700</td><td></td><td>color: #FFF</td></tr>
+        </tbody>
+      </table>
+      <strong>SEALM layouts</strong>
+      <div class="wrap_layouts">
+        <div class="cont_layout">
+          <strong>list_main</strong>
+          <p class="subtit">01_1_0_main.html</p>
+          <ul class="list_main">
+            <li><a href="link_main"><span class="tit_subtit">FAQ</span></a></li>
+            <li><a href="link_main"><span class="tit_subtit">문의내역확인</span></a></li>
+            <li><a href="link_main"><span class="tit_subtit">정책</span></a></li>
+          </ul>
+        </div>
+        <div class="cont_layout">
+          <strong>list_qna</strong>
+          <p class="subtit">02_2_1_faq.html</p>
+          <p class="subtit">05_2_1_policy_detail.html</p>
+          <ul class="list_qna">
+            <li class="list_q">
+              <span class="txt_q">검색결과</span>
+              <span class="ico_arr_d ico_comm"></span>
+            </li>
+            <li class="list_a">
+              <p class="txt_article">검색결과 상세화면</p>
+            </li>
+          </ul>  
+        </div>
+        <div class="cont_layout">
+          <strong>list_customer</strong>
+          <p class="subtit">02_1_0_faq.html</p>
+          <p class="subtit">03_1_1_ask.html</p>
+          <p class="subtit">05_1_0_policy.html</p>
+          <ul class="list_customer">
+            <li>
+              <a href="#none" class="link_customer">
+                <span class="tit_subtit">게임관련</span>
+                <span class="ico_arr_r ico_comm"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="link_customer">
+                <span class="tit_subtit">복구</span>
+                <span class="ico_arr_r ico_comm"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="cont_layout">
+          <strong>list_chk</strong>
+          <p class="subtit">03_2_1_ask_result.html</p>
+          <ul class="list_chk">
+            <li class="list_title">
+              <span class="btn_inline b_orange">접수접수접수접수</span>
+              <p class="txt_status">2021-07-13- 18:29:45</p>
+              <div class="wrap_title">
+                <p class="txt_common">문의내역 제목출력 문의내역 제목출력</p>
+                <span class="ico_arr_d ico_comm"></span>  
+              </div>
+            </li>
+            <li class="list_article">
+              <p class="txt_article">
+                2차 비밀번호는 계정도용 등의 피해를 방지하기 위하여 설정하는 비밀번호입니다.
+                <br>
+                회원 가입 시 설정하신 질문&sol;답변을 통해 변경이 가능합니다.
+                <br>
+                <br>
+                만약 질문&sol;답변을 분실하셨다면, 아래와 같이 변경이 가능합니다.
+              </p>
+              <div class="wrap_file">
+                <span class="txt_file">첨부파일명</span>
+                <span class="txt_file">첨부파일명</span>
+                <span class="txt_file">첨부파일명</span>
+                <span class="txt_file">첨부파일명</span>
+                <span class="txt_file">첨부파일명</span>
+              </div>
+              <div class="wrap_process">
+                <p class="txt_article">답변 준비중입니다.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- // mWrap -->
+  <!-- // #index -->
 </body></html>
