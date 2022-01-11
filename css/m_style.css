@@ -459,27 +459,6 @@ br {
   color: #494949;
 }
 
-.tit_coupon {
-  display: block;
-  margin-top: 14px;
-  font-size: 20px;
-  font-weight: 900;
-  letter-spacing: -0.8px;
-  color: #333;
-}
-
-.txt_coupon {
-  display: block;
-  margin-top: 25px;
-  margin-bottom: 30px;
-  font-size: 17px;
-  font-weight: 400;
-  letter-spacing: -0.8px;
-  -ms-word-break: keep-all;
-  word-break: keep-all;
-  color: #333;
-}
-
 /* --- images --- */
 
 .img_alert {
@@ -1545,6 +1524,18 @@ br {
   height: calc(100vh - 180px);
   text-align: center;
 }
+@media (orientation: landscape) {
+  .cont_error {
+    min-height: 354px;
+    padding-bottom: 74px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .cont_error {
+    min-height: 354px;
+    padding-bottom: 74px;
+  }
+}
 
 .wrap_note {
   position: relative;
@@ -1559,8 +1550,40 @@ br {
   margin: 0 auto;
   background-color: #FFF;
 }
-
-
+@media screen and (min-width: 901px) and (orientation: portrait) {
+  .wrap_note .wrap_btn {
+    position: fixed;
+    width: calc(100% - 40px);
+    bottom: 0;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1297px) and (orientation: portrait) {
+  .wrap_note .wrap_btn {
+    position: fixed;
+    width: calc(100% - 40px);
+    bottom: 0;
+    margin: 0 auto;
+  }
+}
+@media (orientation: landscape) {
+  .wrap_note .wrap_btn {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .cont_note {
+    padding-bottom: 74px;
+  }
+}
+@media screen and (orientation: landscape) and (min-width: 1024px) {
+  .wrap_note .wrap_btn {
+    position: fixed;
+    width: calc(100% - 40px);
+    bottom: 0;
+    margin: 0 auto;
+  }
+}
 
 .cont_note {
   position: relative;
@@ -1603,81 +1626,6 @@ br {
   letter-spacing: -0.4px;
   line-height: 1.5;
   color: #56585B;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.wrap_coupon {
-  position: relative;
-  display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  display: -moz-box; /* Firefox 19- */
-  display: -ms-flexbox; /* IE10 */
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-direction: column; /* IE10 */
-  -webkit-flex-direction: column; /* Chrome */
-  flex-direction: column;
-  -webkit-box-align: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-align: center; /* Firefox 19- */
-  -ms-flex-align: center; /* IE10 */
-  -webkit-align-items: center; /* IE10 */
-  align-items: center; /* Chrome */
-  -webkit-box-pack: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-pack: center; /* Firefox 19- */
-  -ms-flex-pack: center; /* IE10 */
-  -webkit-justify-content: center; /* IE10 */
-  justify-content: center; /* Chrome */
-  height: calc(100vh - 112px);
-  min-height: 586px;
-  /* min-height 값을 줘버리면 100vh 의미가 없어짐. */
-}
-
-.cont_coupon_01 {
-  text-align: center;
-}
-
-@media (orientation: landscape) {
-  .wrap_coupon {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    min-height: 335px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .cont_coupon_02 {
-    margin-left: 56px;
-  }
-}
-
-.txt_assist {
-  display: block;
-  margin-top: 15px;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: -0.8px;
-  -ms-word-break: break-all;
-  word-break: break-all;
-  text-align: left;
-  color: #56585B;
-}
-.txt_assist .ico_dot {
-  margin-bottom: 3px;
-}
-
-.wrap_coupon .wrap_btn {
-  margin-top: 30px;
 }
 
 /* 2022.01.03 추가 */
@@ -1727,7 +1675,6 @@ br {
   vertical-align: top;
   color: #56585B;
 }
-
 @media screen and (min-width: 300px) and (max-width: 453px) {
   .txt_footer:nth-child(2)::after {
     content: '';
@@ -1819,92 +1766,3 @@ br {
   left: 0;
   background-color: rgba(0,0,0,0.8);
 }
-
-
-
-
-/* cont_error */
-
-@media (orientation: landscape) {
-  .cont_error {
-    min-height: 354px;
-    padding-bottom: 74px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .cont_error {
-    min-height: 354px;
-    padding-bottom: 74px;
-  }
-}
-
-/* wrap_btn_fxd */
-
-/* @media (orientation: landscape) {
-  .wrap_btn_fxd {
-    position: relative;
-    width: 100%;
-    margin: 0 auto 50px auto;
-    padding: 0 20px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 1195px) {
-  .wrap_btn_fxd {
-    position: fixed;
-    width: 100%;
-    bottom: 50px;
-    margin: 0 auto;
-  }
-} */
-
-/* list_qna */
-
-/* 2022.01.03 주석처리 */
-/* @media screen and (min-width: 400px) and (max-width: 1195px) and (orientation: landscape) {
-  .list_qna {
-    margin-bottom: 0;
-  }
-} */
-
-/* wrap_note .wrap_btn */
-
-@media screen and (min-width: 901px) and (orientation: portrait) {
-  .wrap_note .wrap_btn {
-    position: fixed;
-    width: calc(100% - 40px);
-    bottom: 0;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1297px) and (orientation: portrait) {
-  .wrap_note .wrap_btn {
-    position: fixed;
-    width: calc(100% - 40px);
-    bottom: 0;
-    margin: 0 auto;
-  }
-}
-
-@media (orientation: landscape) {
-  .wrap_note .wrap_btn {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .cont_note {
-    padding-bottom: 74px;
-  }
-}
-
-@media screen and (orientation: landscape) and (min-width: 1024px) {
-  .wrap_note .wrap_btn {
-    position: fixed;
-    width: calc(100% - 40px);
-    bottom: 0;
-    margin: 0 auto;
-  }
-}
-
