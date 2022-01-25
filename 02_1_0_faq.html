@@ -12,10 +12,15 @@
   <title>01_0 FAQ</title>
 
   <!-- css -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"><!-- bootstrap 3.4.1 only -->
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet"><!-- editor -->
   <link rel="stylesheet" href="./css/m_style.css">
 
   <!-- js -->
   <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script><!-- bootstrap 3.4.1 only -->
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script><!-- editor -->
+  <script src="./js/summernote-table.js"></script><!-- editor-table-style -->
   <script src="./js/m_main.js"></script>
 </head>
 
@@ -38,12 +43,10 @@
           <span class="sr_only">이전 페이지</span>
         </a>
         <h2><span class="tit_maintit">FAQ</span></h2>
-        <!-- 2021.12.13 홈 버튼(햄버거메뉴 아이콘) 추가 -->
         <a href="01_1_0_main.html" class="link_home">
           <span class="ico_menu"></span>
           <span class="sr_only">홈으로 이동</span>
         </a>
-        <!-- // 2021.12.13 홈 버튼(햄버거메뉴 아이콘) 추가 -->
       </div>
     </header>
     <!-- // HEADER -->
@@ -59,7 +62,7 @@
             <span class="ico_comm ico_srch"></span>
             <span class="sr_only">찾기 버튼</span>
           </button>
-          <input type="search" class="input_srch_type1" placeholder="궁금한 내용을 입력해주세요.">
+          <input type="search" class="input_srch_type1" placeholder="궁금한 내용을 입력해주세요." aria-placeholder="궁금한 내용을 입력해주세요.">
         </form>
       </div>
       <!-- // .m_input_type1 -->
