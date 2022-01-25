@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 /* ---------------------------------------------------------------------------------
   fonts
@@ -8,41 +8,41 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/NotoSansCJKkr-Light.woff2") format("woff2"),
-      url("../fonts/NotoSansCJKkr-Light.ttf") format("truetype"),
-      url("../fonts/NotoSansCJKkr-Light.otf") format("opentype");
+  src: url('../fonts/NotoSansCJKkr-Light.woff2') format('woff2'),
+      url('../fonts/NotoSansCJKkr-Light.ttf') format('truetype'),
+      url('../fonts/NotoSansCJKkr-Light.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/NotoSansCJKkr-Regular.woff2") format("woff2"),
-      url("../fonts/NotoSansCJKkr-Regular.ttf") format("truetype"),
-      url("../fonts/NotoSansCJKkr-Regular.otf") format("opentype");
+  src: url('../fonts/NotoSansCJKkr-Regular.woff2') format('woff2'),
+      url('../fonts/NotoSansCJKkr-Regular.ttf') format('truetype'),
+      url('../fonts/NotoSansCJKkr-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/NotoSansCJKkr-Medium.woff2") format("woff2"),
-      url("../fonts/NotoSansCJKkr-Medium.ttf") format("truetype"),
-      url("../fonts/NotoSansCJKkr-Medium.otf") format("opentype");
+  src: url('../fonts/NotoSansCJKkr-Medium.woff2') format('woff2'),
+      url('../fonts/NotoSansCJKkr-Medium.ttf') format('truetype'),
+      url('../fonts/NotoSansCJKkr-Medium.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/NotoSansCJKkr-Bold.woff2") format("woff2"),
-  url("../fonts/NotoSansCJKkr-Bold.ttf") format("truetype"),
-  url("../fonts/NotoSansCJKkr-Bold.otf") format("opentype");
+  src: url('../fonts/NotoSansCJKkr-Bold.woff2') format('woff2'),
+  url('../fonts/NotoSansCJKkr-Bold.ttf') format('truetype'),
+  url('../fonts/NotoSansCJKkr-Bold.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/NotoSansCJKkr-Black.woff2") format("woff2"),
-      url("../fonts/NotoSansCJKkr-Black.ttf") format("truetype"),
-      url("../fonts/NotoSansCJKkr-Black.otf") format("opentype");
+  src: url('../fonts/NotoSansCJKkr-Black.woff2') format('woff2'),
+      url('../fonts/NotoSansCJKkr-Black.ttf') format('truetype'),
+      url('../fonts/NotoSansCJKkr-Black.otf') format('opentype');
 }
 
 
@@ -489,7 +489,7 @@ br {
 
 /* --- icon --- */
 
-[class*="ico_"] {
+[class*='ico_'] {
   display: inline-block;
 } 
 
@@ -499,7 +499,7 @@ br {
 	line-height: 0;
 	vertical-align: top;
   text-indent: -9999px;
-	background-image: url(../images/ico_comm.png);
+	background-image: url('../images/ico_comm.png');
   background-size: 120px 20px;
   -webkit-background-size: 120px 20px;
 	background-repeat: no-repeat;
@@ -558,13 +558,13 @@ br {
 .ico_menu {
   width: 21px;
   height: 17px;
-  background: url(../images/img_menu.png) center center no-repeat;
+  background: url('../images/img_menu.png') center center no-repeat;
 }
 
 .ico_dot {
   width: 4px;
   height: 4px;
-  background: url(../images/img_dot.png) center center no-repeat;
+  background: url('../images/img_dot.png') center center no-repeat;
 }
 
 /* --- form --- */
@@ -779,7 +779,7 @@ br {
   font-size: 17px;
   font-weight: 500;
   color: #333;
-  background: url(../images/img_select.png) no-repeat 98.6% 54.9%;
+  background: url('../images/img_select.png') no-repeat 98.6% 54.9%;
   background-size: 11px 7px;
 }
 
@@ -899,7 +899,7 @@ br {
   position: relative;
   width: 16px;
   height: 16px;
-  background: #88898C url(../images/img_delete.png) center center no-repeat;
+  background: #88898C url('../images/img_delete.png') center center no-repeat;
   background-size: 99.99% 99.99%;
 }
 
@@ -909,7 +909,7 @@ br {
   width: 48px;
   height: 48px;
   border-radius: 3px;
-  background: #F4F5F7 url(../images/img_upload.png) center center no-repeat;
+  background: #F4F5F7 url('../images/img_upload.png') center center no-repeat;
 }
 
 /* 구글 영수증 번호란? */
@@ -1610,7 +1610,7 @@ br {
   height: 4px;
   left: 0;
   margin-top: 8px;
-  background: url(../images/img_dot.png) center center no-repeat;
+  background: url('../images/img_dot.png') center center no-repeat;
 }
 
 .list_note li + li {
@@ -1753,7 +1753,7 @@ br {
   height: 50px;
   top: 0;
   right: 0;
-  background: url(../images/btn_close.png) center center no-repeat;
+  background: url('../images/btn_close.png') center center no-repeat;
 }
 
 .wrap_dimmed {
