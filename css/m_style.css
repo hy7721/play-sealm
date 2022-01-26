@@ -380,7 +380,7 @@ br {
 
 .tit_maintit {
   display: block;
-  font-size: 20px;
+  font-size: 18px; /* 2022.01.26 수정 */
   font-weight: 900;
   letter-spacing: -1px;
   color: #333 !important;
@@ -395,7 +395,7 @@ br {
 
 .tit_subtit {
   display: block;
-  font-size: 17px;
+  font-size: 16px; /* 2022.01.26 수정 */
   font-weight: 700;
 }
 
@@ -1070,7 +1070,7 @@ br {
   -webkit-justify-content: center; /* IE10 */
   justify-content: center; /* Chrome */
   width: 100%;
-  height: 60px;
+  height: 50px; /* 2022.01.26 수정 */
   margin: 0 auto;
 }
 
@@ -1203,13 +1203,13 @@ br {
 
 .list_main {
   position: relative;
-  /* padding-top: 24px; */ /* 2021.01.03 주석처리 */
-  padding-bottom: 134px;
+  /* padding-top: 24px; */ /* 2022.01.03 주석처리 */
+  padding-bottom: 124px;
 }
 
 .list_main > li {
-  padding: 15px 0;
-  line-height: 1.42;
+  padding: 13px 0; /* 2022.01.26 수정 */
+  line-height: 1;
 }
 
 .list_main > li + li {
@@ -1230,20 +1230,20 @@ br {
 .list_main .ico_arr_r {
   position: absolute;
   right: 0;
-  margin-top: -17px;
+  margin-top: -14px;
 }
 
 .list_main .ico_landing {
   position: absolute;
   right: 0;
-  margin-top: -19px;
+  margin-top: -16px;
 }
 
 /* 02_1_0_faq */
 
 .list_customer {
   position: relative;
-  /* padding-top: 24px; */ /* 2021.01.03 주석처리 */
+  /* padding-top: 24px; */ /* 2022.01.03 주석처리 */
   padding-bottom: 74px;
 }
 
@@ -1650,7 +1650,7 @@ br {
 .txt_footer,
 .txt_copyright {
   display: inline;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   line-height: 2;
   letter-spacing: -0.8px;
