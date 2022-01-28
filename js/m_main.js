@@ -60,7 +60,7 @@ $(document).ready(function() {
 // });
 $(window).on('load', function() {
   if ($('#preloader').length) {
-    $('#preloader').delay(2000).fadeOut('slow', function() {
+    $('#preloader').delay(1).fadeOut('fast', function() {
       $(this).remove();
     });
   }
@@ -76,3 +76,53 @@ function layerPopupClose(){
     if($(this).css("display") != "none") $(this).stop(true, true).fadeOut(300);
   });
 };
+
+// editor(summernote)
+$(document).ready(function() {
+  $('.summernote').summernote({
+    placeholder: "내용을 입력해주세요.",
+    tabsize: 2,
+    minHeight: 300,
+    focus: true,
+
+    toolbar: [
+      ['style', ['style']],
+      ['font', ['bold', 'underline', 'clear']],
+      ['color', ['color']],
+      ['para', ['ul', 'ol', 'paragraph']],
+      ['table', ['table']],
+      ['insert', ['link', 'picture', 'video']],
+      ['view', ['codeview', 'help']]
+    ],
+
+    popover: {
+      table: [
+        ['add', ['addRowDown', 'addRowUp', 'addColLeft', 'addColRight']],
+        ['delete', ['deleteRow', 'deleteCol', 'deleteTable']],
+        ['custom', ['tableStyles']]
+      ],
+
+      air: [
+        ['color', ['color']],
+        ['font', ['bold', 'underline', 'clear']],
+        ['para', ['ul', 'paragraph']],
+        ['table', ['table']],
+        ['insert', ['link', 'picture']]
+      ],
+
+      image: [
+        ['image', ['resizeFull', 'resizeHalf', 'resizeQuarter', 'resizeNone']],
+        ['float', ['floatLeft', 'floatRight', 'floatNone']],
+        ['remove', ['removeMedia']]
+      ],
+    },
+
+    // 2022.01.28 추가
+    styleTags: [
+      'p', {
+        tag: 'p', className: 'txt_article'
+      },
+    ],
+    fontNames: ['Noto Sans KR', 'Apple SD Gothic Neo', 'sans-serif']
+  });
+});
