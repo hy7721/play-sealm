@@ -837,7 +837,7 @@ br {
   text-align: center;
   color: #FFF;
 }
-
+ws
 .wrap_btn {
   position: relative;
   width: 100%;
@@ -1011,7 +1011,6 @@ br {
   justify-content: center; /* Chrome */
   height: 52px;
 }
-
 /* m_header_type2 > 이전/닫기 버튼 있는 상태 */
 .m_header_type2 .inner_p {
   display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
@@ -1528,9 +1527,7 @@ br {
 .wrap_error {
   position: relative;
   width: 100%;
-  /* height: calc(100vh - 30px); */
-  height: 100vh;
-  /* 2022.01.28 수정 */
+  height: 100vh; /* 2022.01.28 수정 */
 }
 
 /* 2022.01.28 추가 */
@@ -1578,17 +1575,17 @@ br {
   height: calc(100vh - 184px);
   text-align: center;
 }
-@media screen and (max-width: 550px) {
-  .cont_error {
-    /* min-height: 354px; */
-    min-height: 242px;
-  }
-}
 @media (orientation: landscape) {
   .cont_error {
     min-height: 320px;
     height: calc(100vh - 110px); /* 2022.01.28 수정 */
     /* padding-bottom: 40px; */ /* 2022.01.28 주석처리 */
+  }
+}
+@media screen and (max-width: 550px) {
+  .cont_error {
+    min-height: 242px; /* 2022.01.28 수정 */
+    /* padding-bottom: 74px; */ /* 2022.01.28 주석처리 */
   }
 }
 
@@ -1707,8 +1704,8 @@ br {
   display: inline;
   font-size: 10px;
   font-weight: 400;
-  line-height: 2;
   letter-spacing: -0.8px;
+  line-height: 2;
   color: #56585B;
 }
 
