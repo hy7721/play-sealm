@@ -8,41 +8,31 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/NotoSansCJKkr-Light.woff2') format('woff2'),
-      url('../fonts/NotoSansCJKkr-Light.ttf') format('truetype'),
-      url('../fonts/NotoSansCJKkr-Light.otf') format('opentype');
+  src: url('../fonts/NotoSansCJKkr-Light.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Light.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Light.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/NotoSansCJKkr-Regular.woff2') format('woff2'),
-      url('../fonts/NotoSansCJKkr-Regular.ttf') format('truetype'),
-      url('../fonts/NotoSansCJKkr-Regular.otf') format('opentype');
+  src: url('../fonts/NotoSansCJKkr-Regular.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Regular.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/NotoSansCJKkr-Medium.woff2') format('woff2'),
-      url('../fonts/NotoSansCJKkr-Medium.ttf') format('truetype'),
-      url('../fonts/NotoSansCJKkr-Medium.otf') format('opentype');
+  src: url('../fonts/NotoSansCJKkr-Medium.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Medium.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Medium.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/NotoSansCJKkr-Bold.woff2') format('woff2'),
-  url('../fonts/NotoSansCJKkr-Bold.ttf') format('truetype'),
-  url('../fonts/NotoSansCJKkr-Bold.otf') format('opentype');
+  src: url('../fonts/NotoSansCJKkr-Bold.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Bold.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Bold.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/NotoSansCJKkr-Black.woff2') format('woff2'),
-      url('../fonts/NotoSansCJKkr-Black.ttf') format('truetype'),
-      url('../fonts/NotoSansCJKkr-Black.otf') format('opentype');
+  src: url('../fonts/NotoSansCJKkr-Black.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Black.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Black.otf') format('opentype');
 }
 
 
@@ -156,7 +146,8 @@ select:focus {
 }
 
 input:checked[type=checkbox] {
-  -webkit-appearance: checkbox; 
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox; 
   appearance: checkbox;
 }
 
@@ -241,7 +232,7 @@ a[href^=tel] {
   color: inherit;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -1px;
@@ -249,7 +240,7 @@ a[href^=tel] {
   background-color: #FFF;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-::-moz-placeholder { /* Firefox 19+ */
+::-moz-placeholder {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -1px;
@@ -257,7 +248,7 @@ a[href^=tel] {
   background-color: #FFF;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-:-ms-input-placeholder { /* IE 10+ */
+:-ms-input-placeholder {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -1px;
@@ -265,7 +256,7 @@ a[href^=tel] {
   background-color: #FFF;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -1px;
@@ -283,7 +274,7 @@ a[href^=tel] {
 }
 
 br {
-  line-height: 1; /* 2022.01.28 추가 */
+  line-height: 1;
   font-family: 'Dotum'; /* IE에서 br 태그 이슈 대응 */
 }
 
@@ -318,7 +309,7 @@ br {
 }
 
 .p_bottom {
-  padding-bottom: 60px; /* 2022.01.28 수정 */
+  padding-bottom: 60px;
 }
 
 .b_blue {
@@ -380,7 +371,7 @@ br {
 
 .tit_maintit {
   display: block;
-  font-size: 18px; /* 2022.01.26 수정 */
+  font-size: 18px;
   font-weight: 900;
   letter-spacing: -1px;
   color: #333 !important;
@@ -395,7 +386,7 @@ br {
 
 .tit_subtit {
   display: block;
-  font-size: 15px; /* 2022.01.28 수정 */
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -423,11 +414,11 @@ br {
 .txt_count {
   display: block;
   width: 100%;
-  margin-top: 6px; /* 2022.01.28 수정 */
+  margin-top: 6px;
   font-size: 12px;
   font-weight: 400;
   text-align: right;
-  line-height: 1; /* 2022.01.28 추가 */
+  line-height: 1;
   color: #CCC;
 }
 
@@ -473,7 +464,7 @@ br {
 .wrap_error .img_alert {
   width: auto;
   height: 64px;
-  margin: 30px auto 10px auto; /* 2022.01.28 수정 */
+  margin: 30px auto 10px auto;
 }
 
 .img_chk {
@@ -481,14 +472,11 @@ br {
   width: 56px;
   height: 56px;
   margin: 0 auto 30px auto;
-  /* padding-top: 30px; */
 }
 
 .img_error {
   width: 170px;
   height: 95px;
-  /* margin-top: 35px; */
-  /* margin-bottom: 70px; */ /* 2022.01.03 주석처리 */
 }
 
 /* --- icon --- */
@@ -504,9 +492,8 @@ br {
 	vertical-align: top;
   text-indent: -9999px;
 	background-image: url('../images/ico_comm.png');
-  background-size: 120px 20px;
-  -webkit-background-size: 120px 20px;
 	background-repeat: no-repeat;
+  background-size: 120px 20px;
 }
 
 .ico_landing {
@@ -530,8 +517,8 @@ br {
 .ico_prev {
   width: 10px;
   height: 15px;
-  margin-top: 3px; /* 2022.01.26 수정 */
-  margin-right: 10px; /* 2022.01.26 수정 */
+  margin-top: 3px;
+  margin-right: 10px;
   background-position: -85px 0;
 }
 
@@ -575,22 +562,22 @@ br {
 /* --- form --- */
 
 /* 문의 제목 입력(20자 이내) */
-.input_txt_type1::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.input_txt_type1::-webkit-input-placeholder {
   font-size: 16px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_txt_type1::-moz-placeholder { /* Firefox 19+ */
+.input_txt_type1::-moz-placeholder {
   font-size: 16px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_txt_type1:-ms-input-placeholder { /* IE 10+ */
+.input_txt_type1:-ms-input-placeholder {
   font-size: 16px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_txt_type1:-moz-placeholder { /* Firefox 18- */
+.input_txt_type1:-moz-placeholder {
   font-size: 16px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
@@ -602,22 +589,22 @@ br {
 }
 
 /* 문의 내용을 입력해주세요(500자 이내) */
-.input_txt_type2::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.input_txt_type2::-webkit-input-placeholder {
   font-size: 14px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_txt_type2::-moz-placeholder { /* Firefox 19+ */
+.input_txt_type2::-moz-placeholder {
   font-size: 14px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_txt_type2:-ms-input-placeholder { /* IE 10+ */
+.input_txt_type2:-ms-input-placeholder {
   font-size: 14px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_txt_type2:-moz-placeholder { /* Firefox 18- */
+.input_txt_type2:-moz-placeholder {
   font-size: 14px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
@@ -629,22 +616,22 @@ br {
 }
 
 /* FAQ 검색창 */
-.input_srch_type1::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.input_srch_type1::-webkit-input-placeholder {
   font-size: 14px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_srch_type1::-moz-placeholder { /* Firefox 19+ */
+.input_srch_type1::-moz-placeholder {
   font-size: 14px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_srch_type1:-ms-input-placeholder { /* IE 10+ */
+.input_srch_type1:-ms-input-placeholder {
   font-size: 14px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_srch_type1:-moz-placeholder { /* Firefox 18- */
+.input_srch_type1:-moz-placeholder {
   font-size: 14px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
@@ -656,25 +643,25 @@ br {
 }
 
 /* 구글영수증번호 검색 */
-.input_srch_type2::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.input_srch_type2::-webkit-input-placeholder {
   font-size: 15px;
   font-weight: 500;
   color: #CCC !important;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_srch_type2::-moz-placeholder { /* Firefox 19+ */
+.input_srch_type2::-moz-placeholder {
   font-size: 15px;
   font-weight: 500;
   color: #CCC !important;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_srch_type2:-ms-input-placeholder { /* IE 10+ */
+.input_srch_type2:-ms-input-placeholder {
   font-size: 15px;
   font-weight: 500;
   color: #CCC !important;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_srch_type2:-moz-placeholder { /* Firefox 18- */
+.input_srch_type2:-moz-placeholder {
   font-size: 15px;
   font-weight: 500;
   color: #CCC !important;
@@ -694,19 +681,21 @@ br {
   height: 64px;
   background-color: #F4F5F7;
 }
+
 /* 문의유형 셀렉트 박스 wrap */
 .m_input_type2 {
   overflow: hidden;
   width: 100%;
-  height: 48px; /* 2022.01.28 수정 */
-  border-bottom: 1px solid #EBEBEB; /* 2022.01.26 수정 */
+  height: 48px;
+  border-bottom: 1px solid #EBEBEB;
 }
+
 /* 문의 내용을 입력 wrap */
 .m_input_type3 {
   overflow: hidden;
   width: 100%;
   margin-top: 18px;
-  border: 1px solid #EBEBEB; /* border(문의하기 내용입력) */
+  border: 1px solid #EBEBEB;
   border-radius: 5px;
 }
 
@@ -735,14 +724,15 @@ br {
 .input_txt_type1 {
   position: relative; 
   width: 100%;
-  height: 48px; /* 2022.01.28 수정 */
-  padding: 15px 0 15px 3px; /* 2022.01.26 수정 */
+  height: 48px;
+  padding: 15px 0 15px 3px;
   border: 0 none;
-  font-size: 16px; /* 2022.01.28 수정 */
+  font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 2022.01.28 수정 */
+  line-height: 1.5;
   color: #333;
 }
+
 /* 문의 내용을 입력해주세요(500자 이내) */
 .input_txt_type2 {
   display: block;
@@ -753,7 +743,6 @@ br {
   font-weight: 500;
   line-height: 1.5;
   color: #333;
-  background-clip: padding-box;
   background-color: #FFF;
 }
 
@@ -768,6 +757,7 @@ br {
   color: #333;
   background-color: #FFF;
 }
+
 /* 구글영수증번호 검색 */
 .input_srch_type2 {
   width: calc(100% - 28px);
@@ -781,35 +771,37 @@ br {
 /* 문의유형 선택 */
 .select_option {
   width: 100%;
-  padding: 12px 0; /* 2022.01.28 수정 */
+  padding: 12px 0;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5; /* 2022.01.28 수정 */
+  line-height: 1.5;
   color: #333;
-  background: url('../images/img_select.png') no-repeat 98.6% 54.9%;
+  background-image: url('../images/img_select.png');
+  background-repeat: no-repeat;
+  background-position: 98.6% 54.9%;
   background-size: 11px 7px;
 }
 
 /* --- button --- */
 
 .btn_full {
-  display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  display: -moz-box; /* Firefox 19- */
-  display: -ms-flexbox; /* IE10 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-align: center; /* Firefox 19- */
-  -ms-flex-align: center; /* IE10 */
-  -webkit-align-items: center; /* IE10 */
-  align-items: center; /* Chrome */
-  -webkit-box-pack: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-pack: center; /* Firefox 19- */
-  -ms-flex-pack: center; /* IE10 */
-  -webkit-justify-content: center; /* IE10 */
-  justify-content: center; /* Chrome */
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   width: 100%;
-  height: 50px; /* 2022.01.26 수정 */
+  height: 50px;
   padding: 17px 0;
   border-radius: 5px;
   font-size: 16px;
@@ -837,7 +829,7 @@ br {
   text-align: center;
   color: #FFF;
 }
-ws
+
 .wrap_btn {
   position: relative;
   width: 100%;
@@ -845,28 +837,26 @@ ws
   padding-bottom: 30px;
 }
 
-/* 2022.01.03 수정 */
 .wrap_btn_fxd {
   position: fixed;
   width: 100%;
   bottom: 0;
-  padding: 0 20px 30px 20px; /* 2022.01.28 수정 */
+  padding: 0 20px 30px 20px;
   background-color: #FFF;
 }
-/* 2022.01.03 추가 */
+
 @media screen and (orientation: landscape) {
   .wrap_btn_fxd {
     position: relative;
-    /* padding: 0 20px 30px 20px; */ /* 2022.01.26 주석처리 */ 
   }
 }
-/* wrap_receipt .wrap_btn_fxd */
-@media (orientation: landscape) {
+
+@media screen and (orientation: landscape) {
   .wrap_receipt .wrap_btn_fxd {
     position: relative;
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 30px; /* 2022.01.26 수정 */
+    padding-bottom: 30px;
   }
 }
 @media screen and (orientation: landscape) and (min-width: 1023px) {
@@ -896,6 +886,7 @@ ws
   top: 23px;
   right: 25px;
 }
+
 /* 돋보기 ico 버튼(현금영수증 조회) */
 .btn_srch_type2 {
   position: absolute;
@@ -905,15 +896,17 @@ ws
   right: 0;
 }
 
-/* 2022.01.03 추가 및 수정 */
 /* 업로드 된 파일 삭제 버튼 */
 .btn_delete {
-  display: inline-block; /* 2022.01.26 추가 */
+  display: inline-block;
   width: 16px;
   height: 16px;
-  margin-bottom: 4px; /* 2022.01.26 추가 */
-  background: #88898C url('../images/img_delete.png') center center no-repeat;
-  background-size: 99.99% 99.99%;
+  margin-bottom: 4px;
+  background-color: #88898C;
+  background-image: url('../images/img_delete.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
 }
 
 /* 파일 업로드 버튼 */
@@ -922,7 +915,10 @@ ws
   width: 48px;
   height: 48px;
   border-radius: 3px;
-  background: #F4F5F7 url('../images/img_upload.png') center center no-repeat;
+  background-color: #F4F5F7;
+  background-image: url('../images/img_upload.png');
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 /* 구글 영수증 번호란? */
@@ -960,10 +956,11 @@ ws
   vertical-align: middle;
   background-color: #CCC;
 }
+
 .showButton {
   opacity: 1 !important;
   visibility: visible !important;
-  }
+}
 
 
 
@@ -994,40 +991,41 @@ ws
 
 /* m_header_type1 > 이전/닫기 버튼 없는 상태(메인페이지 only) */
 .m_header_type1 .inner_p {
-  display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  display: -moz-box; /* Firefox 19- */
-  display: -ms-flexbox; /* IE10 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-align: center; /* Firefox 19- */
-  -ms-flex-align: center; /* IE10 */
-  -webkit-align-items: center; /* IE10 */
-  align-items: center; /* Chrome */
-  -webkit-box-pack: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-pack: center; /* Firefox 19- */
-  -ms-flex-pack: center; /* IE10 */
-  -webkit-justify-content: center; /* IE10 */
-  justify-content: center; /* Chrome */
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   height: 52px;
 }
+
 /* m_header_type2 > 이전/닫기 버튼 있는 상태 */
 .m_header_type2 .inner_p {
-  display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  display: -moz-box; /* Firefox 19- */
-  display: -ms-flexbox; /* IE10 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-align: center; /* Firefox 19- */
-  -ms-flex-align: center; /* IE10 */
-  -webkit-align-items: center; /* IE10 */
-  align-items: center; /* Chrome */
-  -webkit-box-pack: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-pack: center; /* Firefox 19- */
-  -ms-flex-pack: center; /* IE10 */
-  -webkit-justify-content: center; /* IE10 */
-  justify-content: center; /* Chrome */
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   height: 52px;
 }
 
@@ -1035,7 +1033,7 @@ ws
   position: relative;
   width: 100%;
   margin: 0 auto;
-  /* padding-top: 52px; */ /* 2022.01.28 주석처리 */
+  padding-top: 29px; /* 2022.02.15 수정 */
   background-color: #FFF;
 }
 
@@ -1061,28 +1059,27 @@ ws
   background-color: #F4F5F7;
 }
 
-/* 2022.01.03 수정 */
 #mFooter .inner_footer {
-  display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  display: -moz-box; /* Firefox 19- */
-  display: -ms-flexbox; /* IE10 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -ms-flex-direction: column; /* IE10 */
-  -webkit-flex-direction: column; /* Chrome */
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-align: center; /* Firefox 19- */
-  -ms-flex-align: center; /* IE10 */
-  -webkit-align-items: center; /* IE10 */
-  align-items: center; /* Chrome */
-  -webkit-box-pack: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-pack: center; /* Firefox 19- */
-  -ms-flex-pack: center; /* IE10 */
-  -webkit-justify-content: center; /* IE10 */
-  justify-content: center; /* Chrome */
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   width: 100%;
-  height: 50px; /* 2022.01.26 수정 */
+  height: 50px;
   margin: 0 auto;
 }
 
@@ -1103,75 +1100,77 @@ ws
 }
 
 .cont_result_1 {
-  display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  display: -moz-box; /* Firefox 19- */
-  display: -ms-flexbox; /* IE10 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -ms-flex-direction: column; /* IE10 */
-  -webkit-flex-direction: column; /* Chrome */
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-align: center; /* Firefox 19- */
-  -ms-flex-align: center; /* IE10 */
-  -webkit-align-items: center; /* IE10 */
-  align-items: center; /* Chrome */
-  -webkit-box-pack: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-pack: center; /* Firefox 19- */
-  -ms-flex-pack: center; /* IE10 */
-  -webkit-justify-content: center; /* IE10 */
-  justify-content: center; /* Chrome */
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   height: calc(100vh - 182px);
-  margin-top: 15px; /* 2022.01.28 수정 */
+  margin-top: 15px;
   border-top: 1px solid #EBEBEB;
 }
+
 /* cont_result - 문의 접수 완료, 문의 내역 없음 */
 .cont_result_2 {
-  display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  display: -moz-box; /* Firefox 19- */
-  display: -ms-flexbox; /* IE10 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -ms-flex-direction: column; /* IE10 */
-  -webkit-flex-direction: column; /* Chrome */
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-align: center; /* Firefox 19- */
-  -ms-flex-align: center; /* IE10 */
-  -webkit-align-items: center; /* IE10 */
-  align-items: center; /* Chrome */
-  -webkit-box-pack: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-pack: center; /* Firefox 19- */
-  -ms-flex-pack: center; /* IE10 */
-  -webkit-justify-content: center; /* IE10 */
-  justify-content: center; /* Chrome */
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   width: 100%;
   height: calc(100vh - 184px);
   text-align: center;
 }
-@media (orientation: landscape) {
-  .cont_result_1,
+
+@media screen and (orientation: landscape) {
+  .cont_result_1 {
+    padding: 30vh 0;
+  }
   .cont_result_2 {
-    padding: 40vh 0;
+    padding: 40vh 0 35vh 0; /* 2022.02.15 수정 */
   }
 }
 @media screen and (orientation: landscape) and (max-width: 927px) {
   .cont_result_2 {
-    min-height: 230px;
-    /* padding: 30vh 0; */ /* 2022.01.28 주석처리 */
-    /* margin-top: 52px; */ /* 이미지가 헤더에 묻히면 대응 */
+    min-height: 220px; /* 2022.02.15 수정 */
   }
 }
 
 .wrap_receipt {
   position: relative;
-  display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  display: -moz-box; /* Firefox 19- */
-  display: -ms-flexbox; /* IE10 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -ms-flex-direction: column; /* IE10 */
-  -webkit-flex-direction: column; /* Chrome */
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
   flex-direction: column;
   width: 100%;
   height: calc(100vh - 52px);
@@ -1194,7 +1193,6 @@ ws
   padding: 12px 0;
   border-bottom: 1px solid #EEE;
 }
-
 .wrap_table td:nth-child(1) {
   width: 42%;
   text-align: left;
@@ -1216,13 +1214,13 @@ ws
 
 .list_main {
   position: relative;
-  padding-top: 20px; /* 2022.01.28 수정 */
-  padding-bottom: 110px; /* 2022.01.28 수정 */
+  padding-top: 20px;
+  padding-bottom: 110px;
 }
 
 .list_main > li {
-  padding: 12px 0; /* 2022.01.28 수정 */
-  line-height: 1.4; /* 2022.01.28 수정 */
+  padding: 12px 0;
+  line-height: 1.4;
 }
 
 .list_main > li + li {
@@ -1256,13 +1254,13 @@ ws
 
 .list_customer {
   position: relative;
-  padding-top: 20px; /* 2022.01.28 수정 */
-  padding-bottom: 60px; /* 2022.01.28 수정 */
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 .list_customer > li {
-  padding: 12px 0; /* 2022.01.28 수정 */
-  line-height: 1.4; /* 2022.01.28 수정 */
+  padding: 12px 0;
+  line-height: 1.4;
 }
 
 .list_customer > li + li {
@@ -1299,8 +1297,8 @@ ws
   width: 100%;
   height: 100%;
   margin-bottom: 80px;
-  padding-top: 20px; /* 2022.01.28 수정 */
-  padding-bottom: 60px; /* 2022.01.28 수정 */
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 @media screen and (orientation: landscape) {
@@ -1323,10 +1321,10 @@ ws
 .list_q {
   position: relative;
   margin: 0 20px;
-  padding: 12px 0; /* 2022.01.28 수정 */
+  padding: 12px 0;
   border-bottom: 1px solid #EBEBEB;
   cursor: pointer;
-  line-height: 1.4; /* 2022.01.28 수정 */
+  line-height: 1.4;
 }
 .list_q.is_active {
   border: 0 none;
@@ -1395,7 +1393,6 @@ ws
   position: relative;
   width: 100%;
   height: 100%;
-  /* margin-top: 20px; */ /* 2022.01.28 주석처리 */
 }
 
 .wrap_result .tit_result {
@@ -1408,13 +1405,14 @@ ws
   width: 100%;
   bottom: 0;
   left: 0;
-  padding: 0 20px 30px 20px; /* 2022.01.28 수정 */
+  padding: 0 20px 30px 20px;
   background-color: #FFF;
 }
-@media (orientation: landscape) {
+
+@media screen and (orientation: landscape) {
   .wrap_result .wrap_btn {
     position: relative;
-    padding: 30px 0;
+    padding: 20px 0 30px 0; /* 2022.02.15 수정 */
   }
 }
 
@@ -1435,7 +1433,6 @@ ws
 /* 03_1_1_ask */
 
 .list_upload,
-/* 2022.01.26 추가 */
 .list_upload li {
   position: relative;
 }
@@ -1455,8 +1452,8 @@ ws
 
 .list_chk {
   position: relative;
-  margin-top: 20px; /* 2022.01.28 수정 */
-  margin-bottom: 15px; /* 2022.01.28 수정 */
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .list_title {
@@ -1473,7 +1470,7 @@ ws
 .list_chk .wrap_title {
   position: relative;
   width: 100%;
-  padding-top: 15px; /* 2022.01.28 수정 */
+  padding-top: 15px;
 }
 
 .wrap_title > .txt_common {
@@ -1506,7 +1503,7 @@ ws
   display: none;
   width: 100%;
   margin: 0 auto;
-  padding: 15px 20px; /* 2022.01.28 수정 */
+  padding: 15px 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1514,8 +1511,8 @@ ws
 }
 
 .wrap_process {
-  margin-top: 15px; /* 2022.01.28 수정 */
-  padding-top: 15px; /* 2022.01.28 수정 */
+  margin-top: 15px;
+  padding-top: 15px;
   border-top: 2px dotted #CCC;
 }
 
@@ -1527,10 +1524,9 @@ ws
 .wrap_error {
   position: relative;
   width: 100%;
-  height: 100vh; /* 2022.01.28 수정 */
+  height: 100vh;
 }
 
-/* 2022.01.28 추가 */
 .wrap_error .wrap_btn {
   position: fixed;
   width: 100%;
@@ -1539,7 +1535,8 @@ ws
   padding: 0 20px 30px 20px;
   background-color: #FFF;
 }
-@media (orientation: landscape) {
+
+@media screen and (orientation: landscape) {
   .wrap_error .wrap_btn {
     position: relative;
     padding: 30px 0;
@@ -1553,39 +1550,38 @@ ws
 }
 
 .cont_error {
-  display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  display: -moz-box; /* Firefox 19- */
-  display: -ms-flexbox; /* IE10 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -ms-flex-direction: column; /* IE10 */
-  -webkit-flex-direction: column; /* Chrome */
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-align: center; /* Firefox 19- */
-  -ms-flex-align: center; /* IE10 */
-  -webkit-align-items: center; /* IE10 */
-  align-items: center; /* Chrome */
-  -webkit-box-pack: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-pack: center; /* Firefox 19- */
-  -ms-flex-pack: center; /* IE10 */
-  -webkit-justify-content: center; /* IE10 */
-  justify-content: center; /* Chrome */
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   width: 100%;
   height: calc(100vh - 184px);
   text-align: center;
 }
-@media (orientation: landscape) {
+
+@media screen and (orientation: landscape) {
   .cont_error {
     min-height: 320px;
-    height: calc(100vh - 110px); /* 2022.01.28 수정 */
-    /* padding-bottom: 40px; */ /* 2022.01.28 주석처리 */
+    height: calc(100vh - 110px);
   }
 }
 @media screen and (max-width: 550px) {
   .cont_error {
-    min-height: 242px; /* 2022.01.28 수정 */
-    /* padding-bottom: 74px; */ /* 2022.01.28 주석처리 */
+    min-height: 242px;
   }
 }
 
@@ -1602,6 +1598,7 @@ ws
   margin: 0 auto;
   background-color: #FFF;
 }
+
 @media screen and (min-width: 901px) and (orientation: portrait) {
   .wrap_note .wrap_btn {
     position: fixed;
@@ -1618,7 +1615,7 @@ ws
     margin: 0 auto;
   }
 }
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
   .wrap_note .wrap_btn {
     position: relative;
     width: 100%;
@@ -1680,7 +1677,6 @@ ws
   color: #56585B;
 }
 
-/* 2022.01.03 추가 */
 #mFooter.m_footer {
   position: fixed;
   bottom: 0;
@@ -1727,6 +1723,7 @@ ws
   vertical-align: top;
   color: #56585B;
 }
+
 @media screen and (min-width: 300px) and (max-width: 453px) {
   .txt_footer:nth-child(2)::after {
     content: '';
@@ -1748,19 +1745,19 @@ ws
   z-index: 128;
   overflow-y: scroll;
   position: absolute;
-  display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  display: -moz-box; /* Firefox 19- */
-  display: -ms-flexbox; /* IE10 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -ms-flex-direction: column; /* IE10 */
-  -webkit-flex-direction: column; /* Chrome */
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-  -moz-box-align: center; /* Firefox 19- */
-  -ms-flex-align: center; /* IE10 */
-  -webkit-align-items: center; /* IE10 */
-  align-items: center; /* Chrome */
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   width: calc(100% - 40px);
   max-height: calc(100vh - 50px);
   top: 40px;
@@ -1776,9 +1773,11 @@ ws
   color: #4C4C4C;
   background-color: #FFF;
 }
+
 .inner_popup > strong {
   letter-spacing: -1.2px;
 }
+
 .inner_popup > .wrap_btn {
   margin: 60px 0 0 0;
   padding: 0;
