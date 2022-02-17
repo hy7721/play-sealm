@@ -537,7 +537,7 @@ br {
 .ico_srch {
   width: 19px;
   height: 19px;
-  background-position: -60px 0; /* 2022.02.16 수정 */
+  background-position: -60px 0;
 }
 
 .ico_top {
@@ -551,23 +551,21 @@ br {
 .ico_menu {
   width: 21px;
   height: 17px;
-  background-position: -60px -20px; /* 2022.02.16 수정 */
+  background-position: -60px -20px;
 }
 
 .ico_dot {
   width: 4px;
   height: 4px;
-  background-position: 0 -48px; /* 2022.02.16 수정 */
+  background-position: 0 -48px;
 }
 
-/* 2022.02.16 추가 */
 .ico_delete {
   width: 8px;
   height: 8px;
   background-position: 0 -34px;
 }
 
-/* 2022.02.16 추가 */
 .ico_upload {
   width: 20px;
   height: 20px;
@@ -789,12 +787,13 @@ br {
 .select_option {
   width: 100%;
   padding: 12px 0;
+  cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   color: #333;
-  background-color: #FFF; /* 2020.02.16 추가 */
-  background-image: url('../images/img_select.png');
+  background-color: #FFF;
+  background-image: url('../images/ico_select.png');
   background-repeat: no-repeat;
   background-position: 98.6% 54.9%;
   background-size: 11px 7px;
@@ -919,20 +918,10 @@ br {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin-bottom: 2px; /* 2022.02.16 수정 */
-  padding: 4px; /* 2022.02.16 추가 */
+  margin-bottom: -4px; /* 2022.02.17 수정 */
+  margin-left: 5px; /* 2022.02.17 추가 */
+  padding: 4px;
   background-color: #88898C;
-  background-position: center center;
-}
-
-/* 파일 업로드 버튼 */
-.btn_upload {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  padding: 14px; /* 2022.02.16 추가 */
-  border-radius: 3px;
-  background-color: #F4F5F7;
   background-position: center center;
 }
 
@@ -1048,9 +1037,7 @@ br {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  /* padding-top: 29px; */
-  padding-top: 52px;
-  /* 2022.02.15 수정 */
+  padding-top: 29px;
   background-color: #FFF;
 }
 
@@ -1074,6 +1061,13 @@ br {
   box-sizing: border-box;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
   background-color: #F4F5F7;
+}
+
+@media screen and (orientation: portrait) {
+  #mFooter {
+    position: fixed;
+    bottom: 0;
+  }
 }
 
 #mFooter .inner_footer {
@@ -1170,12 +1164,12 @@ br {
     padding: 30vh 0;
   }
   .cont_result_2 {
-    padding: 40vh 0 35vh 0; /* 2022.02.15 수정 */
+    padding: 40vh 0 35vh 0;
   }
 }
 @media screen and (orientation: landscape) and (max-width: 927px) {
   .cont_result_2 {
-    min-height: 220px; /* 2022.02.15 수정 */
+    min-height: 220px;
   }
 }
 
@@ -1232,7 +1226,7 @@ br {
 .list_main {
   position: relative;
   padding-top: 20px;
-  padding-bottom: 110px;
+  padding-bottom: 60px;
 }
 
 .list_main > li {
@@ -1258,7 +1252,7 @@ br {
 .list_main .ico_arr_r {
   position: absolute;
   right: 0;
-  margin-top: -15px; /* 2022.02.16 수정 */
+  margin-top: -15px;
 }
 
 .list_main .ico_landing {
@@ -1298,7 +1292,7 @@ br {
 .list_customer .ico_arr_r {
   position: absolute;
   right: 0;
-  margin-top: -15px; /* 2022.02.16 수정 */
+  margin-top: -15px;
 }
 
 .list_customer .ico_landing {
@@ -1429,7 +1423,7 @@ br {
 @media screen and (orientation: landscape) {
   .wrap_result .wrap_btn {
     position: relative;
-    padding: 20px 0 30px 0; /* 2022.02.15 수정 */
+    padding: 20px 0 30px 0;
   }
 }
 
@@ -1541,7 +1535,6 @@ br {
 .wrap_error {
   position: relative;
   width: 100%;
-  /* height: 100vh; */ /* 2022.02.16 주석처리 */
 }
 
 .wrap_error .wrap_btn {
@@ -1593,7 +1586,6 @@ br {
 @media screen and (orientation: landscape) {
   .cont_error {
     min-height: 280px;
-    /* height: calc(100vh - 110px); */ /* 2022.02.16 주석 처리 */
   }
 }
 @media screen and (max-width: 550px) {
@@ -1638,9 +1630,6 @@ br {
     width: 100%;
     margin: 0 auto;
   }
-  .cont_note {
-    padding-bottom: 74px;
-  }
 }
 @media screen and (orientation: landscape) and (min-width: 1024px) {
   .wrap_note .wrap_btn {
@@ -1657,6 +1646,12 @@ br {
   height: 100%;
   margin-top: 60px;
   padding-bottom: 184px;
+}
+
+@media screen and (orientation: landscape) {
+  .cont_note {
+    padding-bottom: 60px; /* 2022.02.17 수정 */
+  }
 }
 
 .cont_note > strong {
@@ -1692,11 +1687,6 @@ br {
   letter-spacing: -0.4px;
   line-height: 1.5;
   color: #56585B;
-}
-
-#mFooter.m_footer {
-  position: fixed;
-  bottom: 0;
 }
 
 .list_footer {
