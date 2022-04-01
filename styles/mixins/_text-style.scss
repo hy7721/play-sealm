@@ -1,0 +1,59 @@
+@mixin text-maintit {
+  color: $primary;
+  font-size: $font-size-18;
+  font-weight: 900;
+  letter-spacing: $letter-spacing-4;
+}
+
+@mixin text-button {
+  font-size: $font-size-16;
+  font-weight: 500;
+  color: $white;
+  letter-spacing: $letter-spacing-2;
+}
+
+@mixin text-input {
+  font-size: $font-size-16;
+  font-weight: 500;
+  line-height: $line-height-15;
+  color: $primary;
+}
+
+@mixin text-subtit {
+  font-size: $font-size-15;
+  font-weight: 700;
+}
+
+@mixin text-common {
+  font-size: $font-size-15;
+  color: $primary;
+}
+
+@mixin text-article {
+  font-size: $font-size-14;
+  font-weight: 500;
+  letter-spacing: $letter-spacing-2;
+}
+
+@mixin text-result {
+  font-size: $font-size-14;
+  font-weight: 500;
+  line-height: $line-height-20;
+  letter-spacing: $letter-spacing-4;
+  color: $secondary;
+}
+
+@mixin text-error {
+  font-size: $font-size-14;
+  font-weight: 500;
+  line-height: $line-height-14;
+  color: $secondary;
+}
+
+@mixin text-placeholder {
+  background-color: $white;
+  color: $tertiary;
+  font-family: $font-main;
+  font-weight: 500;
+  letter-spacing: $letter-spacing-4;
+}

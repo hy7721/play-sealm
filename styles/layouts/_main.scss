@@ -1,0 +1,46 @@
+#mMain {
+  background-color: $white;
+  margin: 0 auto;
+  padding-top: 29px;
+  position: relative;
+  width: 100%;
+}
+
+.list_main {
+  min-height: 280px;
+  padding-bottom: 60px;
+  padding-top: 20px;
+  position: relative;
+
+  li {
+    line-height: $line-height-14;
+    padding: 12px 0;
+
+    + li {
+      border-top: 1px solid $light-grey;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $light-grey;
+    }
+  }
+
+  .tit_subtit,
+  .link_main {
+    @include text-subtit;
+    color: $primary;
+    letter-spacing: $letter-spacing-4;
+  }
+
+  .ico_arr_r {
+    margin-top: 6px;
+    position: absolute;
+    right: 0;
+  }
+
+  .ico_landing {
+    margin-top: 4px;
+    position: absolute;
+    right: 0;
+  }
+}

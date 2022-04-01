@@ -1,0 +1,75 @@
+.sr_only {
+  border: 0 !important;
+  clip: rect(0, 0, 0, 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
+.ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.p_bottom {
+  padding-bottom: 60px;
+}
+
+.b_blue {
+  background-color: $blue;
+}
+
+.b_orange {
+  background-color: $orange;
+}
+
+.b_green {
+  background-color: $green;
+}
+
+.b_emerald {
+  background-color: $emerald;
+}
+
+.txt_light {
+  font-weight: 300;
+}
+
+.txt_regular {
+  font-weight: 400;
+}
+
+.txt_medium {
+  font-weight: 500;
+}
+
+.txt_bold {
+  font-weight: 700;
+}
+
+.txt_g2 {
+  color: $secondary;
+}
+
+.txt_g5 {
+  color: $tertiary;
+}
+
+.txt_r {
+  color: $red;
+}
+
+.txt_b {
+  color: $blue;
+}
+
+.txt_common {
+  @include text-common;
+}

@@ -1,0 +1,24 @@
+// back to top button
+
+#btnTop {
+  background-color: $tertiary;
+  border-radius: 50%;
+  bottom: 30px;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  opacity: 0;
+  position: fixed;
+  right: 30px;
+  text-align: center;
+  transition: opacity 0.5s, visibility 0.5s;
+  vertical-align: middle;
+  visibility: visible;
+  width: 38px;
+  z-index: 7721;
+}
+
+.showButton {
+  opacity: 1 !important;
+  visibility: visible !important;
+}

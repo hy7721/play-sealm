@@ -1,0 +1,25 @@
+@mixin responsive($screen) {
+  @if ($screen == 'T') {
+    @media screen and (min-width: $md-breakpoint) and (max-width: $lg-breakpoint - 1) {
+      @content;
+    }
+  }
+
+  @if ($screen == 'D') {
+    @media screen and (min-width: $lg-breakpoint) {
+      @content;
+    }
+  }
+
+  @if ($screen == 'P') {
+    @media (orientation: portrait) {
+      @content;
+    }
+  }
+
+  @if ($screen == 'L') {
+    @media (orientation: landscape) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "sealm-support",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "node-sass",
+    "sass": "node-sass -wr styles/main.scss css/m_style.css"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hy7721/playsealm/issues"
+  }
+}

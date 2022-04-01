@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $font-main;
+  font-size: $font-size-16;
+}
+
+body {
+  font-family: $font-main;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+body ::before,
+body ::after {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  font-family: $font-main;
+  font-size: $font-size-16;
+  line-height: $line-height-10;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+strong {
+  font-size: 100%;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+
+  :hover,
+  :active {
+    cursor: pointer;
+    outline: none;
+    text-decoration: underline;
+  }
+
+  :link,
+  :visted {
+    text-decoration: none;
+  }
+
+  [href^='tel'] {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: 0 none;
+  cursor: pointer;
+  font-family: $font-main;
+  vertical-align: middle;
+}
+
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: 0 none;
+  cursor: pointer;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
+}
+
+q {
+  quotes: none;
+
+  ::before,
+  ::after {
+    content: none;
+  }
+}
+
+blockquote {
+  quotes: none;
+
+  ::before,
+  ::after {
+    content: none;
+  }
+}
+
+input,
+select,
+textarea {
+  font-family: $font-main;
+  vertical-align: middle;
+}
+
+table {
+  border: 0 none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  vertical-align: baseline;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+input:checked[type='checkbox'] {
+  -moz-appearance: checkbox;
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='submit'],
+input[type='search'],
+input[type='tel'],
+input[type='email'],
+input[type='button'],
+input[type='reset'] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+input[type='search']::-webkit-search-cancel-button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  background-color: transparent;
+  border: 0 none;
+  font-family: $font-main;
+  outline: none;
+  resize: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0 none;
+  filter: alpha('opacity=0');
+  font-family: $font-main;
+  height: auto;
+  line-height: normal;
+  width: 100%;
+
+  ::-ms-expand {
+    display: none;
+  }
+}
+
+label,
+figure,
+caption {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+::-webkit-input-placeholder {
+  @include text-placeholder;
+  font-size: $font-size-14;
+}
+
+:-ms-input-placeholder {
+  @include text-placeholder;
+  font-size: $font-size-14;
+}
+
+::placeholder {
+  @include text-placeholder;
+  font-size: $font-size-14;
+}
+
+br {
+  font-family: 'Dotum';
+  line-height: $line-height-10;
+}

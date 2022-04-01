@@ -1,0 +1,160 @@
+// 문의 제목 입력(20자 이내)
+.input_txt_type1 {
+  @include text-input;
+  border: 0 none;
+  height: 48px;
+  padding: 15px 0 15px 3px;
+  position: relative;
+  width: 100%;
+}
+
+// 문의 제목 입력(20자 이내) placeholder
+.input_txt_type1::-webkit-input-placeholder {
+  color: $tertiary;
+  font-family: $font-main;
+  font-size: $font-size-16;
+}
+
+.input_txt_type1::-moz-placeholder {
+  color: $tertiary;
+  font-family: $font-main;
+  font-size: $font-size-16;
+}
+
+.input_txt_type1:-ms-input-placeholder {
+  color: $tertiary;
+  font-family: $font-main;
+  font-size: $font-size-16;
+}
+
+.input_txt_type1::placeholder {
+  color: $tertiary;
+  font-family: $font-main;
+  font-size: $font-size-16;
+}
+
+// 문의 내용을 입력해주세요(500자 이내)
+.input_txt_type2 {
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: $white;
+  color: $primary;
+  display: block;
+  font-size: $font-size-14;
+  font-weight: 500;
+  line-height: $line-height-15;
+  min-height: 300px;
+  padding: 15px;
+  width: 100%;
+}
+
+// 문의 내용을 입력해주세요(500자 이내) placeholder
+.input_txt_type2::-webkit-input-placeholder {
+  color: $tertiary;
+  font-family: $font-main;
+  font-size: $font-size-14;
+}
+
+.input_txt_type2:-ms-input-placeholder {
+  color: $tertiary;
+  font-family: $font-main;
+  font-size: $font-size-14;
+}
+
+.input_txt_type2::-moz-placeholder {
+  color: $tertiary;
+  font-family: $font-main;
+  font-size: $font-size-14;
+}
+
+.input_txt_type2::placeholder {
+  color: $tertiary;
+  font-family: $font-main;
+  font-size: $font-size-14;
+}
+
+// FAQ 검색창 wrap
+.m_input_type1 {
+  background-color: $bg-grey;
+  height: 64px;
+  overflow: hidden;
+  width: 100%;
+}
+
+// FAQ 검색창
+.input_srch_type1 {
+  background-color: $white;
+  border: 0 none;
+  color: $primary;
+  font-size: $font-size-14;
+  font-weight: 700;
+  margin: 16px 15px;
+  padding: 6px 35px 6px 10px;
+  width: calc(100% - 30px);
+}
+
+// FAQ 검색창 placeholder
+.input_srch_type1::-webkit-input-placeholder {
+  color: $tertiary;
+  font-family: $font-main;
+  font-size: $font-size-14;
+}
+
+.input_srch_type1::-moz-placeholder {
+  color: $tertiary;
+  font-family: $font-main;
+  font-size: $font-size-14;
+}
+
+.input_srch_type1:-ms-input-placeholder {
+  color: $tertiary;
+  font-family: $font-main;
+  font-size: $font-size-14;
+}
+
+.input_srch_type1::placeholder {
+  color: $tertiary;
+  font-family: $font-main;
+  font-size: $font-size-14;
+}
+
+// 문의유형 셀렉트 박스 wrap
+.m_input_type2 {
+  background-color: $white;
+  border-bottom: 1px solid $light-grey;
+  height: 48px;
+  overflow: hidden;
+  width: 100%;
+}
+
+// 문의 내용 입력 wrap
+.m_input_type3 {
+  border: 1px solid $light-grey;
+  border-radius: 5px;
+  margin-top: 18px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.wrap_form {
+  height: 64px;
+  left: 0;
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+// 문의유형 선택
+.select_option {
+  @include text-input;
+  background-color: $white;
+  background-image: url('../images/ico_select.png');
+  background-position: 98.6% 54.9%;
+  background-repeat: no-repeat;
+  background-size: 11px 7px;
+  cursor: pointer;
+  padding: 12px 0;
+  width: 100%;
+}

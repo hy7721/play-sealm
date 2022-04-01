@@ -1,0 +1,74 @@
+.wrap_result {
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  .tit_result {
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .wrap_btn {
+    background-color: $white;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px 30px;
+    position: fixed;
+    width: 100%;
+
+    @include responsive(L) {
+      padding: 20px 0 30px;
+      position: relative;
+    }
+  }
+}
+
+.cont_result_1 {
+  @include column-flexbox;
+  border-top: 1px solid $light-grey;
+  height: calc(100vh - 182px);
+  margin-top: 15px;
+
+  @include responsive(L) {
+    padding: 30vh 0;
+  }
+}
+
+// cont_result - 문의 접수 완료, 문의 내역 없음
+.cont_result_2 {
+  @include column-flexbox;
+  height: calc(100vh - 130px);
+  text-align: center;
+  width: 100%;
+
+  @media screen and (max-width: 927px) {
+    min-height: 220px;
+  }
+
+  @include responsive(L) {
+    padding: 35vh 0 30vh;
+  }
+
+  p {
+    @include text-error;
+  }
+}
+
+// 검색결과 없음
+.txt_result {
+  @include text-result;
+  display: inline-block;
+}
+
+.img_alert {
+  height: auto;
+  margin: 0 auto 12px;
+  width: 57px;
+}
+
+.img_chk {
+  display: inline-block;
+  height: 56px;
+  margin: 0 auto 30px;
+  width: 56px;
+}

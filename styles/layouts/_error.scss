@@ -1,0 +1,60 @@
+.wrap_error {
+  .img_alert {
+    width: auto;
+    height: 64px;
+    margin: 30px auto 10px;
+  }
+
+  .wrap_btn {
+    @include responsive(L) {
+      padding: 30px 0;
+      position: relative;
+    }
+  }
+}
+
+.img_error {
+  width: 170px;
+  height: 95px;
+}
+
+.wrap_error {
+  position: relative;
+  width: 100%;
+
+  .wrap_btn {
+    background-color: $white;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px 30px;
+    position: fixed;
+    width: 100%;
+
+    @include responsive(L) {
+      padding: 30px 0;
+      position: relative;
+    }
+  }
+}
+
+.cont_error {
+  @include column-flexbox;
+  height: calc(100vh - 184px);
+  text-align: center;
+  width: 100%;
+
+  @media screen and (max-width: 550px) {
+    min-height: 242px;
+  }
+
+  @include responsive(L) {
+    min-height: 300px;
+  }
+
+  p,
+  .txt_common {
+    @include text-error;
+    display: inline-block;
+    margin-top: 8px;
+  }
+}

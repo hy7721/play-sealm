@@ -1,0 +1,60 @@
+#mHeader {
+  background-color: $white;
+  border-bottom: 1px solid $light-grey;
+  height: 52px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+// m_header_type1 > 이전/닫기 버튼 없는 상태(메인페이지 only)
+
+.m_header_type1 {
+  .inner_p {
+    @include flexbox;
+    height: 52px;
+  }
+}
+
+// m_header_type2 > 이전/닫기 버튼 있는 상태
+
+.m_header_type2 {
+  .inner_p {
+    @include flexbox;
+    height: 52px;
+  }
+}
+
+.tit_maintit {
+  color: $primary !important;
+  display: block;
+  font-size: $font-size-18;
+  font-weight: 900;
+  letter-spacing: $letter-spacing-4;
+
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus,
+  &:link {
+    color: $primary !important;
+  }
+}
+
+.link_back {
+  height: 16px;
+  left: 20px;
+  width: 10px;
+  top: 20px;
+  position: absolute;
+}
+
+.link_home {
+  position: absolute;
+  width: 21px;
+  height: 17px;
+  top: 18px;
+  right: 20px;
+}
