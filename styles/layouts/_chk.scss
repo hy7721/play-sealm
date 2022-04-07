@@ -44,6 +44,12 @@
     width: 100%;
     word-break: break-all;
     word-wrap: break-word;
+
+    img {
+      display: block !important;
+      height: auto !important;
+      width: 100% !important;
+    }
   }
 }
 
